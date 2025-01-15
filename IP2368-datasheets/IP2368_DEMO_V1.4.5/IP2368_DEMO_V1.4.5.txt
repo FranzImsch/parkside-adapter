@@ -1,0 +1,6713 @@
+*PADS-LOGIC-V9.0-CP936* DESIGN EXPORT FILE FROM PADS LOGIC V9.5
+*SCH*        GENERAL PARAMETERS OF THE SCHEMATIC DESIGN"
+
+CUR SHEET    0              Current Active Sheet
+USERGRID     4      4       Design and Label/Text grid settings
+LINEWIDTH    10             Width items will be created with
+CONNWIDTH    10             Width used to plot connections
+BUSWIDTH     25             Width used to plot buses
+BUSANGLE     25             Angle used when plotting buses
+NNVISPWRGND  4              Pwr/Gnd netname visibility default flag
+PCBFLAGS     1035           PCB Netlist and ECO options
+PINNAMESIZE  97     10      Height and LineWidth used by pin names
+TEXTSIZE     278    10      Height and LineWidth text will be created width
+JOBTIME      0              Amount of time spent on this LOGIC design
+DOTGRID      1000           Space in thous/inch between graphic dots
+BACKUPTIME   5              Number of minutes between database backups
+TIEDOTSIZE   25             Diameter of tiedot point
+REFNAMESIZE  100    10      Height and LineWidth used by part ref. names
+PARTNAMESIZE 100    10      Height and LineWidth used by part type names
+PINNOSIZE    97     10      Height and LineWidth used by pin numbers
+NETNAMESIZE  100    10      Height and LineWidth used by net names
+REAL WIDTH   10             Widths greater then this are displayed real size
+SHEET SIZE   A2            
+UNITS        0              Rules units type
+JOBNAME      IP2368_DEMO_V1.4.5.sch
+NTXCOL 11 9
+HIRCOL 14
+LINCOL 14
+TXTCOL 11 9
+CONCOL 13
+BUSCOL 14
+PTXCOL 11 9
+COMCOL 11
+NMCOL  11 9
+PNMCOL 11 9
+PINCOL 11 9
+NETCOL 11 9
+FBGCOL 15 0
+OFFREFVIEW   0              Offsheet references visibility default flag
+OFFREFNUM    0              Offsheet references per line
+SHEETNUMSEP  []             Sheet Number separators
+FONT MODE   System
+DEFAULT FONT "Regular Verdana"
+BORDER NAME SIZEA3
+FIELDCOL 2 17
+
+*CAM* PLOTTER SETTINGS 
+*REMARK*    PARENT_KEYWORD PARENT_VALUE
+*REMARK*  [ { 
+*REMARK*       CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ { 
+*REMARK*          GRAND_CHILD_KEYWORD GRAND_CHILD_VALUE [...] 
+*REMARK*       } ]] 
+*REMARK*    } ] 
+
+PLOT_SECTION	5.0
+{
+PLOT_DEFAULTS_PHOTO_PLOTTER	NULL
+{
+DEFAULT_FILE_PREFIX	 IP2368_DEMO_V1
+DEFAULT_SCALE	 1 1
+DEFAULT_ORIENTATION	 0
+DEFAULT_JUSTIFICATION	 SF
+DEFAULT_OFFSETS	 0 0
+DEFAULT_WINDOW_PLOT	 N
+DEFAULT_PLOT_JOBNAME	 N
+DEFAULT_PLOT_OLE	 N
+DEFAULT_SHEET	Current
+DEFAULT_CONNECTIONS	1
+DEFAULT_BUSSES	1
+DEFAULT_LINES	1
+DEFAULT_TEXT	1
+DEFAULT_PARTS	1
+DEFAULT_REFDES	1
+DEFAULT_PARTTYPES	1
+DEFAULT_PARTEXT	1
+DEFAULT_PINNUMBERS	1
+DEFAULT_PINNAMES	1
+DEFAULT_NETNAMES	1
+DEFAULT_HIERSYMS	1
+}
+PLOT_DEFAULTS_PEN_PLOTTER	NULL
+{
+DEFAULT_FILE_PREFIX	 IP2368_DEMO_V1
+DEFAULT_SCALE	 1 1
+DEFAULT_ORIENTATION	 0
+DEFAULT_JUSTIFICATION	 SF
+DEFAULT_OFFSETS	 0 0
+DEFAULT_WINDOW_PLOT	 N
+DEFAULT_PLOT_JOBNAME	 Y
+DEFAULT_PLOT_OLE	 N
+DEFAULT_SHEET	Current
+DEFAULT_CONNECTIONS	1
+DEFAULT_BUSSES	1
+DEFAULT_LINES	1
+DEFAULT_TEXT	1
+DEFAULT_PARTS	1
+DEFAULT_REFDES	1
+DEFAULT_PARTTYPES	1
+DEFAULT_PARTEXT	1
+DEFAULT_PINNUMBERS	1
+DEFAULT_PINNAMES	1
+DEFAULT_NETNAMES	1
+DEFAULT_HIERSYMS	1
+}
+PLOT_DEFAULTS_PRINTER	NULL
+{
+DEFAULT_FILE_PREFIX	 INJOINIC
+DEFAULT_SCALE	 1 1
+DEFAULT_ORIENTATION	 0
+DEFAULT_JUSTIFICATION	 SF
+DEFAULT_OFFSETS	 0 0
+DEFAULT_WINDOW_PLOT	 N
+DEFAULT_PLOT_JOBNAME	 N
+DEFAULT_PLOT_OLE	 Y
+DEFAULT_SHEET	All
+DEFAULT_CONNECTIONS	1
+DEFAULT_BUSSES	1
+DEFAULT_LINES	1
+DEFAULT_TEXT	17
+DEFAULT_PARTS	5
+DEFAULT_REFDES	5
+DEFAULT_PARTTYPES	5
+DEFAULT_PARTEXT	5
+DEFAULT_PINNUMBERS	5
+DEFAULT_PINNAMES	5
+DEFAULT_NETNAMES	2
+DEFAULT_HIERSYMS	1
+}
+PLOT_AUGMENT_ON_THE_FLY	Y
+}
+
+*MISC*      MISCELLANEOUS PARAMETERS
+*REMARK*    PARENT_KEYWORD PARENT_VALUE
+*REMARK*  [ { 
+*REMARK*       CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ { 
+*REMARK*          GRAND_CHILD_KEYWORD GRAND_CHILD_VALUE [...] 
+*REMARK*       } ]] 
+*REMARK*    } ] 
+
+LAYER	MILS
+{
+LAYER	0
+{
+LAYER_THICKNESS	0
+DIELECTRIC	3.300000
+}
+LAYER	1
+{
+LAYER_NAME	顶面
+LAYER_TYPE	ROUTING
+PLANE	NONE
+ROUTING_DIRECTION	HORIZONTAL
+ASSOCIATED_SILK_SCREEN	丝印顶层
+ASSOCIATED_PASTE_MASK	助焊层顶面
+ASSOCIATED_SOLDER_MASK	阻焊层顶层
+ASSOCIATED_ASSEMBLY	装配图顶层
+COMPONENT	Y
+ROUTABLE	Y
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	10
+COPPER_THICKNESS	1.35
+DIELECTRIC	4.300000
+COST	0
+}
+LAYER	2
+{
+LAYER_NAME	底面
+LAYER_TYPE	ROUTING
+PLANE	NONE
+ROUTING_DIRECTION	VERTICAL
+ASSOCIATED_SILK_SCREEN	丝印底层
+ASSOCIATED_PASTE_MASK	助焊层底层
+ASSOCIATED_SOLDER_MASK	阻焊层底层
+ASSOCIATED_ASSEMBLY	装配图底层
+COMPONENT	Y
+ROUTABLE	Y
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	1.35
+DIELECTRIC	3.300000
+COST	0
+}
+LAYER	3
+{
+LAYER_NAME	Layer_3
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	4
+{
+LAYER_NAME	Layer_4
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	5
+{
+LAYER_NAME	Layer_5
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	6
+{
+LAYER_NAME	Layer_6
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	7
+{
+LAYER_NAME	Layer_7
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	8
+{
+LAYER_NAME	Layer_8
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	9
+{
+LAYER_NAME	Layer_9
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	10
+{
+LAYER_NAME	Layer_10
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	11
+{
+LAYER_NAME	Layer_11
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	12
+{
+LAYER_NAME	Layer_12
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	13
+{
+LAYER_NAME	Layer_13
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	14
+{
+LAYER_NAME	Layer_14
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	15
+{
+LAYER_NAME	Layer_15
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	16
+{
+LAYER_NAME	Layer_16
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	17
+{
+LAYER_NAME	Layer_17
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	18
+{
+LAYER_NAME	Layer_18
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	19
+{
+LAYER_NAME	Layer_19
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	20
+{
+LAYER_NAME	Layer_20
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	21
+{
+LAYER_NAME	阻焊层顶层
+LAYER_TYPE	SOLDER_MASK
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	22
+{
+LAYER_NAME	助焊层底层
+LAYER_TYPE	PASTE_MASK
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	23
+{
+LAYER_NAME	助焊层顶面
+LAYER_TYPE	PASTE_MASK
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	24
+{
+LAYER_NAME	钻孔图
+LAYER_TYPE	DRILL
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	25
+{
+LAYER_NAME	Layer_25
+LAYER_TYPE	UNASSIGNED
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	26
+{
+LAYER_NAME	丝印顶层
+LAYER_TYPE	SILK_SCREEN
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	27
+{
+LAYER_NAME	装配图顶层
+LAYER_TYPE	ASSEMBLY
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	28
+{
+LAYER_NAME	阻焊层底层
+LAYER_TYPE	SOLDER_MASK
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	29
+{
+LAYER_NAME	丝印底层
+LAYER_TYPE	SILK_SCREEN
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+LAYER	30
+{
+LAYER_NAME	装配图底层
+LAYER_TYPE	ASSEMBLY
+PLANE	NONE
+ROUTING_DIRECTION	NO_PREFERENCE
+VISIBLE	Y
+SELECTABLE	Y
+ENABLED	Y
+LAYER_THICKNESS	0
+COPPER_THICKNESS	0
+DIELECTRIC	0.000000
+COST	0
+}
+}
+*REMARK*    PARENT_KEYWORD PARENT_VALUE
+*REMARK*  [ { 
+*REMARK*       CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ CHILD_KEYWORD CHILD_VALUE
+*REMARK*     [ { 
+*REMARK*          GRAND_CHILD_KEYWORD GRAND_CHILD_VALUE [...] 
+*REMARK*       } ]] 
+*REMARK*    } ] 
+
+RULES_SECTION	MILS
+{
+NET_CLASS	DATA
+DESIGN	RULES
+{
+RULE_SET	(1)
+{
+FOR	:
+{
+DEFAULT	:
+}
+AGAINST	:
+{
+DEFAULT	:
+}
+LAYER	0
+CLEARANCE_RULE	:
+{
+TRACK_TO_TRACK	6
+VIA_TO_TRACK	6
+VIA_TO_VIA	6
+PAD_TO_TRACK	6
+PAD_TO_VIA	6
+PAD_TO_PAD	6
+SMD_TO_TRACK	6
+SMD_TO_VIA	6
+SMD_TO_PAD	6
+SMD_TO_SMD	6
+COPPER_TO_TRACK	6
+COPPER_TO_VIA	6
+COPPER_TO_PAD	6
+COPPER_TO_SMD	6
+COPPER_TO_COPPER	6
+TEXT_TO_TRACK	6
+TEXT_TO_VIA	6
+TEXT_TO_PAD	6
+TEXT_TO_SMD	6
+OUTLINE_TO_TRACK	6
+OUTLINE_TO_VIA	6
+OUTLINE_TO_PAD	6
+OUTLINE_TO_SMD	6
+OUTLINE_TO_COPPER	6
+DRILL_TO_TRACK	6
+DRILL_TO_VIA	6
+DRILL_TO_PAD	6
+DRILL_TO_SMD	6
+DRILL_TO_COPPER	6
+SAME_NET_SMD_TO_VIA	6
+SAME_NET_SMD_TO_CRN	6
+SAME_NET_VIA_TO_VIA	6
+SAME_NET_PAD_TO_CRN	6
+MIN_TRACK_WIDTH	8
+REC_TRACK_WIDTH	8
+MAX_TRACK_WIDTH	8
+DRILL_TO_DRILL	6
+BODY_TO_BODY	6
+SAME_NET_TRACK_TO_CRN	6
+}
+}
+RULE_SET	(2)
+{
+FOR	:
+{
+DEFAULT	:
+}
+AGAINST	:
+{
+DEFAULT	:
+}
+LAYER	0
+ROUTE_RULE	:
+{
+LENGTH_MINIMIZATION_TYPE	1
+TRACE_SHARE	Y
+VIA_SHARE	Y
+AUTO_ROUTE	Y
+RIPUP	Y
+SHOVE	Y
+ROUTE_PRIORITY	3
+MAX_NUMBER_OF_VIAS	-1
+VALID_LAYER	1
+VALID_LAYER	2
+VALID_VIA_TYPE	*USE_CURRENT*
+}
+}
+RULE_SET	(3)
+{
+FOR	:
+{
+DEFAULT	:
+}
+AGAINST	:
+{
+DEFAULT	:
+}
+LAYER	0
+HIGH_SPEED_RULE	:
+{
+MIN_LENGTH	0
+MAX_LENGTH	50000
+STUB_LENGTH	0
+PARALLEL_LENGTH	1000
+PARALLEL_GAP	200
+TANDEM_LENGTH	1000
+TANDEM_GAP	200
+MIN_DELAY	0.000000
+MAX_DELAY	10.000000
+MIN_CAPACITANCE	0.000000
+MAX_CAPACITANCE	10.000000
+MIN_IMPEDANCE	50.000000
+MAX_IMPEDANCE	150.000000
+SHIELD_NET	*
+SHIELD_GAP	200
+MATCH_LENGTH_TOLERANCE	200
+}
+}
+}
+}
+
+*FIELDS*    USER FIELDS
+
+"Drawn By" IT555
+"Checked By" 
+"QC By" 
+"Released By" 
+"Drawn Date" 2022-04-21
+"Checked Date" 
+"QC Date" 
+"Release Date" 
+"Company Name" 英集芯科技
+"Title" 
+"Code" 
+"Drawing Number" 
+"Revision" 
+"Scale" 
+
+*SHT*   1 $$$NONE -1 $$$NONE
+*CAE*        GENERAL PARAMETERS FOR THE SHEET"
+
+SCALE        3.892          Scale of window expansion
+WINDOWCENTER 3964   2237    Point defining the center of the window
+BITCS0       0              system status bits
+BITCS1       0              system status bits
+BITCS2       0              system status bits
+
+*TEXT*       FREE TEXT
+
+2412   8730   0   1 278  10 0 "Regular Tahoma"
+TYPEC
+13200  13218  0   1 139  10 0 "Regular Microsoft Sans Serif"
+B=3380
+11888  14076  0   0 167  10 0 "Regular Microsoft Sans Serif"
+不使用NTC时，NTC接10K到地
+8786   15812  0   0 167  10 0 "Regular Microsoft Sans Serif"
+RISET_MODE=1K，RISET电阻设定的是恒流充电电池端电流
+8796   15452  0   0 167  10 0 "Regular Microsoft Sans Serif"
+RISET_MODE=NC不贴，RISET电阻设定的是充电输入功率
+8806   15112  0   0 167  10 0 "Regular Lucida Sans Unicode"
+RBAT_MODE=1K，电池选择为磷酸铁锂电池，RVSET设定的单节电池充满电压
+8806   14732  0   0 167  10 0 "Regular Lucida Sans Unicode"
+RBAT_MODE=NC不贴，电池选择为普通锂电池，RVSET设定的单节电池充满电压
+19326  14322  0   0 167  10 0 "Regular Microsoft Sans Serif"
+RCAP(欧姆 1%)
+20876  14312  0   0 167  10 0 "Regular Microsoft Sans Serif"
+对应设定的电芯容量（mAH）
+19330  13942  0   0 167  10 0 "Regular Microsoft Sans Serif"
+RCAP=Qmax/800
+21636  13912  0   0 167  10 0 "Regular Microsoft Sans Serif"
+Qmax
+19656  13548  0   0 167  10 0 "Regular Microsoft Sans Serif"
+6.2k
+19608  13260  0   0 167  10 0 "Regular Microsoft Sans Serif"
+12.4K
+19596  12928  0   0 167  10 0 "Regular Microsoft Sans Serif"
+18.7K
+19600  12584  0   0 167  10 0 "Regular Microsoft Sans Serif"
+24.9K
+19604  12192  0   0 167  10 0 "Regular Microsoft Sans Serif"
+30.9K
+21508  13552  0   0 167  10 0 "Regular Microsoft Sans Serif"
+5000mAH
+21472  13252  0   0 167  10 0 "Regular Microsoft Sans Serif"
+10000mAH
+21476  12940  0   0 167  10 0 "Regular Microsoft Sans Serif"
+15000mAH
+21476  12584  0   0 167  10 0 "Regular Microsoft Sans Serif"
+20000mAH
+21460  12204  0   0 167  10 0 "Regular Microsoft Sans Serif"
+25000mAH
+19302  8186   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RBAT_NUM(欧姆)
+21280  8172   0   0 167  10 0 "Regular Microsoft Sans Serif"
+对应电池串联节数
+19636  7796   0   0 167  10 0 "Regular Microsoft Sans Serif"
+6.2k
+19628  7452   0   0 167  10 0 "Regular Microsoft Sans Serif"
+9.1k
+19628  7108   0   0 167  10 0 "Regular Microsoft Sans Serif"
+13k
+19628  6796   0   0 167  10 0 "Regular Microsoft Sans Serif"
+18k
+19636  6432   0   0 167  10 0 "Regular Microsoft Sans Serif"
+27k
+21512  7792   0   0 167  10 0 "Regular Microsoft Sans Serif"
+2串
+21500  7440   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3串
+21516  7104   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4串
+21508  6804   0   0 167  10 0 "Regular Microsoft Sans Serif"
+5串
+21512  6444   0   0 167  10 0 "Regular Microsoft Sans Serif"
+6串
+1548   3176   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RBAT_MODE悬空，普通锂电池
+1026   2770   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RVSET
+1632   2852   0   0 167  10 0 "Regular Microsoft Sans Serif"
+单节电池充满电压 单位mV step=10mV
+1108   2372   0   0 167  10 0 "Regular Microsoft Sans Serif"
+7.5K
+1096   2076   0   0 167  10 0 "Regular Microsoft Sans Serif"
+10K
+1112   1760   0   0 167  10 0 "Regular Microsoft Sans Serif"
+15K
+1100   1408   0   0 167  10 0 "Regular Microsoft Sans Serif"
+17.5K
+1112   1036   0   0 167  10 0 "Regular Microsoft Sans Serif"
+≥20K
+2796   2384   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4.15V
+2792   2064   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4.2V
+2780   1764   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4.3V
+2780   1404   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4.35V
+2796   1036   0   0 167  10 0 "Regular Microsoft Sans Serif"
+4.4V
+5300   3168   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RBAT_MODE接地，磷酸铁锂电池
+2220   2660   0   0 167  10 0 "Regular Microsoft Sans Serif"
+VTRGT=4000+0.02*RVSET
+4622   2746   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RVSET
+5260   2828   0   0 167  10 0 "Regular Microsoft Sans Serif"
+单节电池充满电压 单位mV step=10mV
+5756   2648   0   0 167  10 0 "Regular Microsoft Sans Serif"
+VTRGT=3500+0.01*RVSET
+4692   2404   0   0 167  10 0 "Regular Microsoft Sans Serif"
+7.5K
+4680   2108   0   0 167  10 0 "Regular Microsoft Sans Serif"
+10K
+4696   1792   0   0 167  10 0 "Regular Microsoft Sans Serif"
+15K
+4708   1388   0   0 167  10 0 "Regular Microsoft Sans Serif"
+≥20K
+6292   2372   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3.55V
+6288   2052   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3.60V
+6276   1752   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3.65V
+6276   1392   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3.7V
+9124   3172   0   0 167  10 0 "Regular Microsoft Sans Serif"
+ISET_MODE悬空，RISET设置恒流最大输入功率
+9186   2766   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RISET
+9804   2820   0   0 167  10 0 "Regular Microsoft Sans Serif"
+充电时最大输入功率  单位mW step=1W
+9268   2368   0   0 167  10 0 "Regular Microsoft Sans Serif"
+5K
+9256   2072   0   0 167  10 0 "Regular Microsoft Sans Serif"
+7.5K
+9272   1756   0   0 167  10 0 "Regular Microsoft Sans Serif"
+11.2K
+9260   1404   0   0 167  10 0 "Regular Microsoft Sans Serif"
+15K
+9272   1032   0   0 167  10 0 "Regular Microsoft Sans Serif"
+≥25K
+10956  2380   0   0 167  10 0 "Regular Microsoft Sans Serif"
+20W
+10952  2060   0   0 167  10 0 "Regular Microsoft Sans Serif"
+30W
+10940  1760   0   0 167  10 0 "Regular Microsoft Sans Serif"
+45W
+10940  1400   0   0 167  10 0 "Regular Microsoft Sans Serif"
+60W
+10956  1032   0   0 167  10 0 "Regular Microsoft Sans Serif"
+100W
+10444  2640   0   0 167  10 0 "Regular Microsoft Sans Serif"
+PCCIN=4*RISET
+13010  2734   0   0 167  10 0 "Regular Microsoft Sans Serif"
+RISET
+13080  2392   0   0 167  10 0 "Regular Microsoft Sans Serif"
+5K
+13068  2096   0   0 167  10 0 "Regular Microsoft Sans Serif"
+10K
+13084  1780   0   0 167  10 0 "Regular Microsoft Sans Serif"
+12.5K
+13096  1376   0   0 167  10 0 "Regular Microsoft Sans Serif"
+15K
+14764  2376   0   0 167  10 0 "Regular Microsoft Sans Serif"
+1A
+14760  2056   0   0 167  10 0 "Regular Microsoft Sans Serif"
+2A
+14748  1756   0   0 167  10 0 "Regular Microsoft Sans Serif"
+2.5A
+14748  1396   0   0 167  10 0 "Regular Microsoft Sans Serif"
+3A
+13048  3152   0   0 167  10 0 "Regular Microsoft Sans Serif"
+ISET_MODE接地，RISET设置恒流最大电池电流
+13708  2828   0   0 167  10 0 "Regular Microsoft Sans Serif"
+充电时最大输入功率  单位mW step=1W
+14364  2636   0   0 167  10 0 "Regular Microsoft Sans Serif"
+PCCIN=0.2*RISET
+13104  1032   0   0 167  10 0 "Regular Microsoft Sans Serif"
+≥25K
+14776  1036   0   0 167  10 0 "Regular Microsoft Sans Serif"
+5A
+19940  15056  0   0 417  10 0 "Regular Microsoft Sans Serif"
+电芯容量设定
+19916  8956   0   0 417  10 0 "Regular Microsoft Sans Serif"
+电池节数设定
+2072   3996   0   0 417  10 0 "Regular Microsoft Sans Serif"
+电池选择和恒压充电电压设置
+9736   3916   0   0 417  10 0 "Regular Microsoft Sans Serif"
+输入恒功率输出恒流选择和功率电流设置
+4152   10572  0   0 167  10 0 "Regular Microsoft Sans Serif"
+默认接R12，U4 NC
+15468  9832   0   0 167  10 0 "Regular Microsoft Sans Serif"
+如需降低静态电流，使用虚线框电路，R20 NC
+15468  10024  0   0 167  10 0 "Regular Microsoft Sans Serif"
+默认接R20到电池，静态电流在150uA左右
+15464  9628   0   0 167  10 0 "Regular Microsoft Sans Serif"
+只支持单独充电型号，带放电的型号不支持
+1206   13416  0   0 97   10 0 "Regular Microsoft Sans Serif"
+5V LDO
+2384   13348  0   0 139  10 0 "Regular Microsoft Sans Serif"
+2N7002
+4396   13452  0   0 139  10 0 "Regular Microsoft Sans Serif"
+2N7002
+2958   14470  0   0 139  10 0 "Regular Microsoft Sans Serif"
+2301
+4980   15276  0   0 139  10 0 "Regular Microsoft Sans Serif"
+2301
+1186   15884  0   0 278  10 0 "Regular 黑体"
+EMARK电路
+2764   15772  0   0 167  10 0 "Regular Lucida Sans Unicode"
+当输出功率大于60W时，需要加上EMARK电路
+9444   8760   0   0 167  10 0 "Regular Lucida Sans Unicode"
+30V TVS
+11996  8592   0   0 167  10 0 "Regular Lucida Sans Unicode"
+30V TVS
+15556  14300  0   0 278  10 0 "Regular 黑体"
+按键和照明
+18752  460    0   0 278  10 1 "Regular Lucida Sans Unicode"
+Drawn By
+19312  1060   0   0 278  10 1 "Regular Microsoft Sans Serif"
+File Name
+1540   5508   0   0 167  10 0 "Regular Lucida Sans Unicode"
+D8,D9选用肖特基二极管5819
+1004   6424   0   0 167  10 0 "Regular Lucida Sans Unicode"
+此电路可以提高VGS，降低功率MOS阻抗，提高效率
+
+*LINES*      LINES ITEMS
+
+DRW19653         LINES    23064  388    13  6
+CLOSED 5   10  255
+0      0     
+0      2500  
+-6000  2500  
+-6000  0     
+0      0     
+OPEN   2   10  255
+0      450   
+-6000  450   
+OPEN   2   10  255
+0      1200  
+-6000  1200  
+OPEN   2   10  255
+-4800  0     
+-4800  1200  
+OPEN   2   10  255
+-3000  0     
+-3000  450   
+CLOSED 5   10  255
+0      0     
+0      15900 
+-22600 15900 
+-22600 0     
+0      0     
+OPEN   2   10  255
+-22600 7950  
+-23000 7950  
+OPEN   2   10  255
+400    7950  
+0      7950  
+OPEN   2   10  255
+-15200 -300  
+-15200 0     
+OPEN   2   10  255
+-7400  -300  
+-7400  0     
+OPEN   2   10  255
+-15200 16200 
+-15200 15900 
+OPEN   2   10  255
+-7400  15900 
+-7400  16200 
+OPEN   2   10  255
+-1800  0     
+-1800  450   
+-1600  100    0   0 278  10 1 "Regular Lucida Sans Unicode"
+Drawn Date
+-2950  2000   0   12 972  10 1 "Regular Microsoft Sans Serif"
+Company Name
+-2950  1400   0   12 417  10 0 "Regular Microsoft Sans Serif"
+INJOINIC TECHNOLOGY
+-5400  800    0   12 347  10 0 "Regular Microsoft Sans Serif"
+TITLE:
+-5400  200    0   12 278  10 0 "Regular Microsoft Sans Serif"
+DRAWM:
+-2400  200    0   12 278  10 0 "Regular Microsoft Sans Serif"
+DATED:
+DRW57565         LINES    15912  8728   1   0
+OPEN   2   50  255
+0      0     
+-1600  0     
+DRW57588         LINES    14192  8728   1   0
+OPEN   2   50  255
+0      0     
+130    0     
+DRW57592         LINES    13472  8728   1   0
+OPEN   4   50  255
+0      0     
+-750   0     
+-750   -250  
+-840   -250  
+DRW57601         LINES    12822  8478   1   0
+OPEN   2   50  255
+0      0     
+-110   0     
+DRW57618         LINES    12302  7938   1   0
+OPEN   2   50  255
+0      0     
+-1050  0     
+DRW57634         LINES    9632   8478   1   0
+OPEN   2   50  255
+0      0     
+-170   0     
+DRW57639         LINES    9542   8488   1   0
+OPEN   3   50  255
+0      0     
+0      180   
+-2040  180   
+DRW7690          LINES    4116   9724   1   0
+OPEN   3   50  255
+0      0     
+0      200   
+-652   200   
+DRW8263          LINES    10664  7940   1   0
+OPEN   2   50  255
+0      0     
+-664   0     
+DRW68322         LINES    5648   9724   1   0
+OPEN   4   50  255
+0      0     
+-196   0     
+-196   700   
+-876   700   
+DRW76217         LINES    3696   9920   1   0
+OPEN   5   50  255
+0      0     
+0      984   
+748    984   
+740    992   
+740    988   
+DRW76223         LINES    5056   10912  1   0
+OPEN   4   50  255
+0      0     
+612    0     
+612    -1184 
+624    -1184 
+DRW17104         LINES    19056  6692   7   0
+CLOSED 5   10  255
+0      0     
+0      4     
+3764   4     
+3764   0     
+0      0     
+CLOSED 5   10  255
+0      336   
+0      344   
+3768   344   
+3768   336   
+0      336   
+CLOSED 5   10  255
+0      636   
+0      632   
+3768   632   
+3768   636   
+0      636   
+CLOSED 5   10  255
+-8     1012  
+-8     1004  
+3768   1004  
+3768   1012  
+-8     1012  
+CLOSED 5   10  255
+0      1368  
+0      1372  
+3768   1372  
+3768   1368  
+0      1368  
+CLOSED 4   10  255
+1584   1788  
+1580   -380  
+1580   1788  
+1584   1788  
+CLOSED 5   10  255
+-4     1800  
+-4     -384  
+3768   -384  
+3768   1800  
+-4     1800  
+DRW17110         LINES    19080  12464  8   0
+CLOSED 5   10  255
+0      0     
+0      8     
+3776   8     
+3776   0     
+0      0     
+CLOSED 5   10  255
+0      364   
+0      368   
+3764   368   
+3764   364   
+0      364   
+CLOSED 5   10  255
+0      700   
+0      708   
+3768   708   
+3768   700   
+0      700   
+CLOSED 5   10  255
+0      1000  
+0      996   
+3768   996   
+3768   1000  
+0      1000  
+CLOSED 5   10  255
+-8     1376  
+-8     1368  
+3768   1368  
+3768   1376  
+-8     1376  
+CLOSED 5   10  255
+0      1732  
+0      1736  
+3768   1736  
+3768   1732  
+0      1732  
+CLOSED 4   10  255
+1584   2152  
+1580   -336  
+1580   2152  
+1584   2152  
+CLOSED 5   10  255
+-4     2164  
+-4     -348  
+3768   -348  
+3768   2164  
+-4     2164  
+DRW17367         LINES    9808   3008   10  0
+CLOSED 4   10  255
+0      0     
+0      -2076 
+-4     0     
+0      0     
+CLOSED 4   10  255
+3848   12    
+3848   -2064 
+3844   12    
+3848   12    
+CLOSED 4   10  255
+-872   -1720 
+-872   -1712 
+6776   -1712 
+-872   -1720 
+CLOSED 4   10  255
+-872   -1356 
+-872   -1352 
+6780   -1352 
+-872   -1356 
+CLOSED 4   10  255
+-872   -1020 
+-872   -1012 
+6780   -1012 
+-872   -1020 
+CLOSED 4   10  255
+-872   -720  
+-872   -724  
+6784   -720  
+-872   -720  
+CLOSED 4   10  255
+-872   -408  
+-872   -416  
+6780   -408  
+-872   -408  
+CLOSED 3   10  255
+-872   12    
+6776   12    
+-872   12    
+CLOSED 4   10  255
+2856   408   
+2852   -2080 
+2852   408   
+2856   408   
+CLOSED 5   10  255
+-876   444   
+-876   -2068 
+6780   -2068 
+6780   444   
+-876   444   
+DRW17376         LINES    1628   3016   10  0
+CLOSED 4   10  255
+0      0     
+0      -2076 
+-4     0     
+0      0     
+CLOSED 4   10  255
+3644   8     
+3644   -2068 
+3640   8     
+3644   8     
+CLOSED 4   10  255
+-852   -724  
+-852   -728  
+6396   -724  
+-852   -724  
+CLOSED 4   10  255
+-852   -1024 
+-852   -1016 
+6396   -1024 
+-852   -1024 
+CLOSED 4   10  255
+-852   -1360 
+-852   -1356 
+6396   -1360 
+-852   -1360 
+CLOSED 4   10  255
+-852   -1724 
+-852   -1716 
+6396   -1724 
+-852   -1724 
+CLOSED 3   10  255
+-852   8     
+6400   8     
+-852   8     
+CLOSED 4   10  255
+-852   -412  
+-852   -420  
+6404   -412  
+-852   -412  
+CLOSED 4   10  255
+2780   428   
+2776   -2060 
+2776   428   
+2780   428   
+CLOSED 5   10  255
+-856   440   
+-856   -2072 
+6396   -2072 
+6396   440   
+-856   440   
+DRW17491         LINES    496    4988   1   0
+OPEN   4   10  255
+0      0     
+22544  0     
+22576  -32   
+22588  -20   
+DRW17639         LINES    8572   388    1   0
+OPEN   2   10  255
+0      0     
+0      4600  
+DRW55385         LINES    15712  8728   1   0
+OPEN   5   50  255
+0      0     
+0      652   
+824    652   
+824    556   
+828    556   
+DRW55393         LINES    16436  9384   1   0
+OPEN   2   50  255
+0      0     
+0      -100  
+DRW55396         LINES    16332  9380   1   0
+OPEN   2   50  255
+0      0     
+0      -96   
+DRW55399         LINES    16232  9384   1   0
+OPEN   2   50  255
+0      0     
+0      -100  
+DRW55434         LINES    16336  8184   1   0
+OPEN   3   50  255
+0      0     
+0      -196  
+988    -196  
+DRW55441         LINES    16436  8188   1   0
+OPEN   3   50  255
+0      0     
+0      -196  
+4      -196  
+DRW55446         LINES    16536  8192   1   0
+OPEN   2   50  255
+0      0     
+0      -196  
+D56167           LINES    18808  4988   1   0
+OPEN   2   10  255
+0      0     
+-8     11316 
+DRW56191         LINES    18804  10612  1   0
+OPEN   3   10  255
+0      0     
+4248   0     
+4248   32    
+DRW56519         LINES    16540  9384   1   0
+OPEN   3   50  255
+0      0     
+440    0     
+440    -348  
+DRW56526         LINES    16980  8448   1   0
+OPEN   2   50  255
+0      0     
+0      -456  
+DRW57183         LINES    15900  6792   1   0
+CLOSED 9   10  0  
+0      0     
+-1352  0     
+-1352  -1548 
+1148   -1548 
+1148   1092  
+912    1092  
+912    2324  
+0      2324  
+0      0     
+D74534           LINES    15080  14768  1   0
+CLOSED 5   10  0  
+0      0     
+0      -3460 
+2216   -3460 
+2216   0     
+0      0     
+DRW34331         LINES    9052   10364  1   0
+OPEN   4   50  255
+0      0     
+-2452  0     
+-2452  -1692 
+-2448  -1692 
+DRW34339         LINES    6832   8672   1   0
+OPEN   4   50  255
+0      0     
+-1160  0     
+-1160  1036  
+-1156  1036  
+DRW34348         LINES    12492  10780  1   0
+OPEN   4   50  255
+0      0     
+2128   0     
+2128   -2032 
+2120   -2032 
+DRW4107          LINES    816    6748   1   0
+CLOSED 5   10  0  
+0      0     
+0      -1476 
+3476   -1476 
+3476   0     
+0      0     
+
+*CAEDECAL*  ITEMS
+
+PIN              34000 34000 100 10 100 10 4 1 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+140 20 0 1 100 10 "Default Font"
+REF-DES
+230 0 0 8 100 10 "Default Font"
+PART-TYPE
+-520 0 0 1 100 10 "Default Font"
+*
+-80 0 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+200   0    
+
+PINB             34000 34000 100 10 100 10 4 2 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+130 14 0 1 100 10 "Default Font"
+REF-DES
+230 0 0 8 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+140   0    
+CIRCLE 2   10  255
+140   0    
+190   0    
+
+PCLK             33500 33180 100 10 100 10 4 2 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+130 14 0 1 100 10 "Default Font"
+REF-DES
+280 0 0 8 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+200   0    
+OPEN   3   10  255
+200   30   
+260   0    
+200   -30  
+
+PCLKB            33500 33180 100 10 100 10 4 3 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+130 14 0 1 100 10 "Default Font"
+REF-DES
+280 0 0 8 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   3   10  255
+200   30   
+260   0    
+200   -30  
+OPEN   2   10  255
+0     0    
+140   0    
+CIRCLE 2   10  255
+190   0    
+140   0    
+
+PINIEB           34000 34000 100 10 100 10 4 1 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+130 14 0 1 100 10 "Default Font"
+REF-DES
+220 0 0 8 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   4   10  255
+0     0    
+200   0    
+140   30   
+140   0    
+
+PINORB           34000 34000 100 10 100 10 4 2 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+130 14 0 1 100 10 "Default Font"
+REF-DES
+300 0 0 8 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+180   0    
+CIRCLE 2   10  255
+230   0    
+180   0    
+
+PINSHORT         34000 34000 100 10 100 10 4 1 0 0 0 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+60 10 0 1 100 10 "Default Font"
+REF-DES
+140 10 0 8 100 10 "Default Font"
+PART-TYPE
+-530 10 0 1 100 10 "Default Font"
+*
+-70 10 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+100   0    
+
+PINVRTS          34000 34000 100 10 100 10 4 1 0 0 3 1
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+20 -80 0 0 100 10 "Default Font"
+REF-DES
+-20 -40 0 9 100 10 "Default Font"
+PART-TYPE
+-500 10 0 1 100 10 "Default Font"
+*
+-30 14 0 1 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     -100 
+0     0    
+
+PIN95            32000 32000 100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 2015.07.30.08.55.39
+"Default Font"
+"Default Font"
+270 -230 0 8 93 10 "Default Font"
+REF-DES
+40 -230 0 1 93 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-190  0    
+
+PIN55            32000 32000 100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 2015.07.30.08.55.39
+"Default Font"
+"Default Font"
+110 -110 0 9 93 10 "Default Font"
+REF-DES
+340 -110 0 0 93 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-110  0    
+
+PIN150           32000 32000 100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 2015.05.15.10.10.18
+"Default Font"
+"Default Font"
+80 -100 0 8 93 10 "Default Font"
+REF-DES
+-150 -100 0 1 93 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-300  0    
+
+PIN50            32000 32000 100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 2014.09.16.01.28.30
+"Regular Tahoma"
+"Regular Tahoma"
+100 150 90 10 80 10 "Regular Tahoma"
+REF-DES
+100 250 90 0 80 10 "Regular Tahoma"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-100  0    
+
+PIN100           32000 32000 100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 1970.01.01.00.00.00
+"Default Font"
+"Default Font"
+80 -100 0 8 93 10 "Default Font"
+REF-DES
+-150 -100 0 1 93 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-200  0    
+
+PIN20            0     0     100 10 100 10 2 1 0 0 0 1
+TIMESTAMP 2014.09.12.09.44.00
+"Default Font"
+"Default Font"
+-160 40 0 8 70 10 "Default Font"
+REF-DES
+-380 0 0 1 70 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+0     0    
+-200  0    
+
+REFIN            33500 33180 97 10 97 10 4 1 0 1 24 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+-360 0 0 1 100 10 "Default Font"
+REF-DES
+-360 -20 0 3 100 10 "Default Font"
+PART-TYPE
+0 100 0 0 100 10 "Default Font"
+*
+0 0 0 0 100 10 "Default Font"
+*
+OPEN   7   5   255
+0     0    
+-100  0    
+-150  -50  
+-300  -50  
+-300  50   
+-150  50   
+-100  0    
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+REFOUT           33500 33180 97 10 97 10 4 1 0 1 24 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+350 10 0 0 100 10 "Default Font"
+REF-DES
+350 -10 0 2 100 10 "Default Font"
+PART-TYPE
+0 100 0 0 100 10 "Default Font"
+*
+0 0 0 0 100 10 "Default Font"
+*
+OPEN   8   5   255
+0     0    
+100   0    
+100   50   
+250   50   
+300   0    
+250   -50  
+100   -50  
+100   0    
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+GND              33500 33180 97 10 97 10 4 4 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+100 -50 0 0 100 10 "Default Font"
+REF-DES
+0 200 0 0 100 10 "Default Font"
+PART-TYPE
+0 100 0 0 100 10 "Default Font"
+*
+0 0 0 0 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     -100 
+OPEN   2   5   255
+-100  -100 
+100   -100 
+OPEN   2   5   255
+-60   -160 
+60    -160 
+OPEN   2   5   255
+-20   -220 
+20    -220 
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+AGND             33500 33180 97 10 97 10 4 1 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+260 0 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   6   5   255
+0     0    
+0     -50  
+-100  -50  
+0     -200 
+100   -50  
+0     -50  
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+CHGND            33500 33180 97 10 97 10 4 5 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+264 -40 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     -100 
+OPEN   2   5   255
+-100  -100 
+100   -100 
+OPEN   2   5   255
+-100  -100 
+-150  -200 
+OPEN   2   5   255
+0     -100 
+-50   -200 
+OPEN   2   5   255
+100   -100 
+50    -200 
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
++5V              33500 33180 97 10 97 10 4 2 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+0 250 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 0 100 10 "Default Font"
+PART-TYPE
+0 100 0 0 100 10 "Default Font"
+*
+0 0 0 0 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     200  
+COPCLS 4   5   255
+0     200  
+-50   100  
+50    100  
+0     200  
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+BUBBLE           33500 33180 97 10 97 10 4 2 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+0 300 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+0     100  
+CIRCLE 2   10  255
+0     100  
+0     200  
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+Y                33500 33180 97 10 97 10 4 2 0 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+0 300 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   3   10  255
+0     0    
+0     100  
+-100  200  
+OPEN   2   10  255
+0     100  
+100   200  
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
++12V             33500 33274 97 10 97 10 4 2 1 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+4 484 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     300  
+COPCLS 4   5   255
+0     300  
+-50   150  
+50    150  
+0     300  
+-108   356    0   0 97  10
++12V
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+-5V              33500 33274 97 10 97 10 4 2 1 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+16 -520 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     -300 
+COPCLS 4   5   255
+0     -300 
+50    -150 
+-50   -150 
+0     -300 
+-80    -388   0   0 97  10
+-5V
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+-12V             33500 33274 97 10 97 10 4 2 1 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+8 -560 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   5   255
+0     0    
+0     -300 
+COPCLS 4   5   255
+0     -300 
+50    -150 
+-50   -150 
+0     -300 
+-116   -412   0   0 97  10
+-12V
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
++5VA             33500 33274 97 10 97 10 4 2 1 1 26 0
+TIMESTAMP 1999.08.25.21.39.16
+"Default Font"
+"Default Font"
+8 468 0 4 100 10 "Default Font"
+REF-DES
+0 200 0 6 100 10 "Default Font"
+PART-TYPE
+0 100 0 6 100 10 "Default Font"
+*
+0 0 0 6 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     0    
+0     300  
+COPCLS 4   10  255
+0     300  
+-50   150  
+50    150  
+0     300  
+-108   336    0   0 97  10
++5VA
+T0     0     0 0 0 0 0 0 0 0 0 8 
+P0 0 0 0 0 0 0 0 128
+
+INDUCTOR         32000 32000 100 10 100 10 4 3 0 2 26 0
+TIMESTAMP 2021.07.12.09.48.17
+"Default Font"
+"Default Font"
+250 300 0 4 100 10 "Default Font"
+REF-DES
+250 250 0 6 100 10 "Default Font"
+PART-TYPE
+250 -100 0 6 100 10 "Default Font"
+VALUE
+250 -200 0 6 100 10 "Default Font"
+SPIL PART#
+OPEN   2   10  255
+100   0     1777  -1754 100   -52   200   48   
+200   0    
+OPEN   2   10  255
+200   0     1777  -1754 200   -52   300   48   
+300   0    
+OPEN   2   10  255
+300   0     1777  -1754 300   -52   400   48   
+400   0    
+T0     0     0 0 70 30 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+T500   0     0 1 60 30 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+
+CAP              32000 32000 100 10 100 10 4 4 0 2 26 0
+TIMESTAMP 2018.08.27.03.37.38
+"Default Font"
+"Default Font"
+150 -210 0 0 100 10 "Default Font"
+REF-DES
+210 -40 0 2 100 10 "Default Font"
+PART-TYPE
+150 -240 0 2 100 10 "Default Font"
+VALUE
+150 -340 0 2 100 10 "Default Font"
+*
+OPEN   2   10  255
+0     -200 
+0     -50  
+OPEN   2   1   255
+-100  -200 
+100   -200 
+OPEN   2   1   255
+-100  -300 
+100   -300 
+OPEN   2   10  255
+0     -300 
+0     -500 
+T0     0     0 0 20 -90 0 0 -20 -40 0 9 PINVRTS
+P-110 -140 0 1 0 0 0 0 128
+T0     -500  0 2 20 -80 0 0 -20 -40 0 9 PINVRTS
+P-110 -130 0 1 0 0 0 0 128
+
+AO3814_NMOS      32000 32000 100 10 100 10 3 2 0 9 0 0
+TIMESTAMP 2021.07.12.09.46.20
+"Default Font"
+"Default Font"
+0 0 0 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+0 -600 0 0 93 10 "Default Font"
+Comment
+CLOSED 5   1   255
+0     -500 
+0     0    
+500   0    
+500   -500 
+0     -500 
+OPEN   2   10  255
+200   0     1800  1800  200   -50   300   50   
+300   0    
+T-300  -100  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -200  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -300  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -400  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -400  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -300  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -200  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -100  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T240   -700  90 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+CAP_02           32000 32000 100 10 100 10 2 4 1 2 26 0
+TIMESTAMP 2019.12.14.06.35.12
+"Default Font"
+"Default Font"
+292 300 90 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+OPEN   2   1   255
+100   200  
+100   150  
+OPEN   2   1   255
+100   100  
+100   0    
+OPEN   2   1   255
+0     150  
+200   150  
+OPEN   2   1   255
+200   50    349   1101  -22   -142  222   102  
+0     50   
+30     150    0   0 97  10
++
+T100   300   90 0 -50 0 0 0 -150 0 0 9 PIN50
+P0 0 0 0 0 0 0 1 192
+T100   -100  90 2 -50 0 0 0 -150 0 0 9 PIN50
+P0 0 0 0 0 0 0 1 192
+
+RESISTANCE       32000 32000 100 10 100 10 4 1 0 2 26 0
+TIMESTAMP 2020.08.18.09.42.46
+"Default Font"
+"Default Font"
+300 100 0 4 100 10 "Default Font"
+REF-DES
+310 200 0 4 100 10 "Default Font"
+PART-TYPE
+300 -100 0 6 100 10 "Default Font"
+VALUE
+300 -200 0 6 100 10 "Default Font"
+*
+OPEN   10  10  255
+100   0    
+120   0    
+150   60   
+210   -60  
+270   60   
+330   -60  
+390   60   
+450   -60  
+470   0    
+500   0    
+T0     0     0 0 34 16 0 0 170 -30 0 8 PINSHORT
+P-80 -30 0 1 -70 10 0 1 0
+T600   0     0 1 0 20 0 0 170 -30 0 8 PINSHORT
+P-90 -20 0 1 -70 10 0 1 0
+
+RESZ-V           32000 32000 100 10 100 10 4 1 0 2 26 0
+TIMESTAMP 2020.08.18.09.42.46
+"Default Font"
+"Default Font"
+100 -280 0 0 100 10 "Default Font"
+REF-DES
+100 -180 0 0 100 10 "Default Font"
+PART-TYPE
+100 -320 0 2 100 10 "Default Font"
+VALUE
+100 -420 0 2 100 10 "Default Font"
+*
+OPEN   10  10  255
+0     -500 
+0     -480 
+-60   -450 
+60    -390 
+-60   -330 
+60    -270 
+-60   -210 
+60    -150 
+0     -130 
+0     -100 
+T0     0     0 0 20 -80 0 0 -20 -40 0 9 PINVRTS
+P840 80 0 1 0 0 0 0 128
+T0     -600  0 2 20 -80 0 0 -20 -40 0 9 PINVRTS
+P840 40 0 1 0 0 0 0 128
+
+RESB-H           32000 32000 100 10 100 10 4 2 0 2 26 0
+TIMESTAMP 2020.08.18.09.42.46
+"Default Font"
+"Default Font"
+300 80 0 4 100 10 "Default Font"
+REF-DES
+300 180 0 4 100 10 "Default Font"
+PART-TYPE
+310 -120 0 12 100 10 "Default Font"
+VALUE
+300 -80 0 6 100 10 "Default Font"
+*
+OPEN   7   10  255
+100   0    
+150   0    
+150   50   
+450   50   
+450   -50  
+150   -50  
+150   0    
+OPEN   2   10  255
+450   0    
+500   0    
+T0     0     0 0 34 16 0 0 170 -30 0 8 PINSHORT
+P-160 0 0 1 0 0 0 0 128
+T600   0     0 1 34 16 0 0 170 -30 0 8 PINSHORT
+P-160 0 0 1 0 0 0 0 128
+
+RESB-V           32000 32000 100 10 100 10 4 2 0 2 26 0
+TIMESTAMP 2020.08.18.09.42.46
+"Default Font"
+"Default Font"
+140 -260 0 0 100 10 "Default Font"
+REF-DES
+210 -80 0 2 100 10 "Default Font"
+PART-TYPE
+140 -290 0 2 100 10 "Default Font"
+VALUE
+180 -400 0 2 100 10 "Default Font"
+*
+OPEN   7   10  255
+0     -460 
+0     -410 
+-50   -410 
+-50   -110 
+50    -110 
+50    -410 
+0     -410 
+OPEN   2   10  255
+0     -110 
+0     -60  
+T0     0     90 2 90 -30 90 2 170 -30 0 8 PINSHORT
+P-10 -190 90 2 0 0 0 0 128
+T0     -500  90 0 80 -30 90 2 170 -30 0 8 PINSHORT
+P-10 -160 90 2 0 0 0 0 128
+
+USB_TYPEC_16PIN  32000 32000 97 10 97 10 4 1 0 16 0 0
+TIMESTAMP 2018.06.11.03.44.38
+"Default Font"
+"Default Font"
+300 1340 0 4 97 10 "Default Font"
+REF-DES
+300 -40 0 6 97 10 "Default Font"
+PART-TYPE
+300 -140 0 6 97 10 "Default Font"
+*
+300 -240 0 6 97 10 "Default Font"
+*
+CLOSED 5   10  255
+0     0    
+800   0    
+800   1300 
+0     1300 
+0     0    
+T-200  1200  0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  900   0 0 132 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  800   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  700   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  600   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  500   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  400   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  100   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  1200  0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  900   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  800   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  700   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  600   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  500   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  400   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  100   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+RU3030M2         32000 32000 100 10 100 10 3 2 0 9 0 0
+TIMESTAMP 2020.01.04.02.48.47
+"Default Font"
+"Default Font"
+0 0 0 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+0 -600 0 0 93 10 "Default Font"
+Comment
+CLOSED 5   1   255
+0     -500 
+0     0    
+500   0    
+500   -500 
+0     -500 
+OPEN   2   10  255
+200   0     1800  1800  200   -50   300   50   
+300   0    
+T-300  -100  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -200  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -300  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -400  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -400  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -300  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -200  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -100  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T240   -700  90 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+RESZ-H           32000 32000 100 10 100 10 4 1 0 2 18 0
+TIMESTAMP 2015.07.06.14.45.45
+"Default Font"
+"Default Font"
+300 100 0 4 100 10 "Default Font"
+REF-DES
+310 200 0 4 100 10 "Default Font"
+PART-TYPE
+300 -100 0 6 100 10 "Default Font"
+VALUE
+300 -200 0 6 100 10 "Default Font"
+*
+OPEN   10  10  255
+100   0    
+120   0    
+150   60   
+210   -60  
+270   60   
+330   -60  
+390   60   
+450   -60  
+470   0    
+500   0    
+T0     0     0 0 34 16 0 0 170 -30 0 8 PINSHORT
+P-80 -30 0 1 0 0 0 0 128
+T600   0     0 1 0 20 0 0 170 -30 0 8 PINSHORT
+P-90 -20 0 1 0 0 0 0 128
+
+IP2368           32000 32000 97 10 97 10 4 1 0 49 0 0
+TIMESTAMP 2021.08.03.12.49.02
+"Default Font"
+"Default Font"
+2600 2640 0 0 97 10 "Default Font"
+REF-DES
+3030 -256 0 2 97 10 "Default Font"
+PART-TYPE
+3030 -356 0 2 97 10 "Default Font"
+*
+3030 -456 0 2 97 10 "Default Font"
+*
+CLOSED 5   10  255
+0     0    
+3026  0    
+3026  3040 
+0     3040 
+0     0    
+T400   -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T600   -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T800   -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1200  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1400  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1600  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1800  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2000  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2200  -200  90 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2404  -200  90 1 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2618  -200  90 1 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  408   0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  608   0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  808   0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1008  0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1208  0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1408  0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1608  0 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1808  0 3 150 -94 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  1996  0 3 132 -92 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  2196  0 3 144 -90 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  2396  0 3 142 -92 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T3226  2596  0 3 140 -90 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2600  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2400  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2200  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T2000  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1800  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1600  3238  90 2 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1400  3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1200  3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T1000  3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T800   3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T600   3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T400   3240  90 3 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  2628  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  2428  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  2228  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  2028  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  1828  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-196  1610  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-202  1406  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-198  1204  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  1008  0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-202  808   0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  606   0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  408   0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T-200  210   0 2 150 -100 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+HEADER4          32000 32000 100 10 100 10 4 1 0 4 1 0
+TIMESTAMP 2019.11.12.09.36.52
+"Default Font"
+"Default Font"
+0 0 0 4 100 10 "Default Font"
+REF-DES
+-50 -440 0 6 100 10 "Default Font"
+PART-TYPE
+-50 -540 0 6 100 10 "Default Font"
+*
+-50 -640 0 6 100 10 "Default Font"
+*
+CLOSED 5   10  255
+400   710  
+400   278  
+490   278  
+490   710  
+400   710  
+T250   650   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T250   550   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T250   450   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T250   350   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+LED              32000 32000 100 10 100 10 4 8 0 2 25 0
+TIMESTAMP 2021.01.20.09.51.10
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 "Default Font"
+REF-DES
+250 -150 0 6 100 10 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 "Default Font"
+*
+250 -350 0 6 100 10 "Default Font"
+*
+OPEN   2   10  255
+90    0    
+390   0    
+OPEN   2   10  255
+340   90   
+340   -90  
+COPCLS 4   10  255
+190   0    
+190   -90  
+340   0    
+190   0    
+COPCLS 4   10  255
+190   0    
+190   90   
+340   0    
+190   0    
+OPEN   2   10  255
+250   150  
+350   250  
+COPCLS 5   10  255
+350   250  
+290   230  
+320   190  
+330   180  
+350   250  
+OPEN   2   10  255
+350   150  
+450   250  
+COPCLS 5   10  255
+460   260  
+400   240  
+430   200  
+440   190  
+460   260  
+T500   0     0 1 130 14 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+T0     0     0 0 130 14 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+
+LED-V            32000 32000 100 10 100 10 4 8 0 2 25 0
+TIMESTAMP 2021.01.20.09.51.10
+"Default Font"
+"Default Font"
+-300 350 0 4 100 10 "Default Font"
+REF-DES
+350 250 0 6 100 10 "Default Font"
+PART-TYPE
+350 150 0 6 100 10 "Default Font"
+COLOR
+350 50 0 6 100 10 "Default Font"
+PART NUMBER
+OPEN   2   10  255
+0     190  
+0     490  
+COPCLS 4   10  255
+0     280  
+200   280  
+0     420  
+0     280  
+OPEN   2   10  255
+90    440  
+-90   440  
+OPEN   2   10  255
+76    376  
+176   476  
+COPCLS 5   10  255
+176   476  
+116   456  
+146   416  
+156   406  
+176   476  
+OPEN   2   10  255
+176   376  
+276   476  
+COPCLS 5   10  255
+286   486  
+226   466  
+256   426  
+266   416  
+286   486  
+COPCLS 4   10  255
+0     280  
+-200  280  
+0     420  
+0     280  
+T0     600   90 2 100 100 90 2 230 0 0 8 PIN
+P-180 470 90 2 -80 0 0 1 0
+T0     100   90 0 90 100 90 2 230 0 0 8 PIN
+P-160 360 90 2 -80 0 0 1 0
+
+BAT              32000 32000 100 10 100 10 2 1 0 1 8 0
+TIMESTAMP 2020.10.13.01.27.51
+"Default Font"
+"Default Font"
+392 0 90 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+CLOSED 5   1   255
+0     -200 
+0     100  
+200   100  
+200   -200 
+0     -200 
+T100   -400  90 2 -50 0 0 0 -280 0 0 9 PIN100
+P-100 0 0 1 -100 0 0 1 192
+
+BAT_1PIN         32000 32000 100 10 100 10 2 1 0 1 26 0
+TIMESTAMP 2021.01.20.09.54.04
+"Default Font"
+"Default Font"
+0 0 0 0 100 10 "Default Font"
+REF-DES
+-6 -292 0 0 100 10 "Default Font"
+PART-TYPE
+CLOSED 5   10  255
+0     -200 
+0     0    
+100   0    
+100   -200 
+0     -200 
+T-200  -100  0 1 -20 0 0 0 -280 0 0 9 PIN20
+P0 0 0 0 0 0 0 0 192
+
+RU30L30M         32000 32000 100 10 100 10 3 2 0 9 2 0
+TIMESTAMP 2021.09.09.02.27.36
+"Default Font"
+"Default Font"
+0 0 0 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+0 -600 0 0 93 10 "Default Font"
+Comment
+CLOSED 5   1   255
+0     -500 
+0     0    
+500   0    
+500   -500 
+0     -500 
+OPEN   2   10  255
+200   0     1800  1800  200   -50   300   50   
+300   0    
+T-300  -100  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -200  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -300  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T-300  -400  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -400  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -300  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -200  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T800   -100  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 192
+T240   -700  90 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+NMOS_DIOD        32000 32000 100 10 100 10 3 17 0 3 10 0
+TIMESTAMP 2021.07.15.09.12.23
+"Default Font"
+"Default Font"
+-480 -500 0 0 100 10 "Default Font"
+REF-DES
+-480 -400 0 0 100 10 "Default Font"
+PART-TYPE
+-480 -600 0 0 100 10 "Default Font"
+value
+OPEN   2   10  255
+50    -200 
+50    0    
+OPEN   2   10  255
+0     -200 
+50    -200 
+OPEN   2   10  255
+200   0    
+200   -20  
+OPEN   2   10  255
+108   -184 
+198   -184 
+OPEN   2   10  255
+200   -20  
+100   -20  
+OPEN   2   10  255
+200   0    
+200   -20  
+COPCLS 4   10  255
+200   -80  
+200   -124 
+164   -100 
+200   -80  
+OPEN   2   10  255
+102   -200 
+102   0    
+OPEN   2   10  255
+250   -100 
+350   -100 
+COPCLS 4   10  255
+302   -100 
+352   -150 
+252   -150 
+302   -100 
+OPEN   2   10  255
+200   50   
+300   50   
+OPEN   2   10  255
+300   -50  
+300   50   
+OPEN   2   10  255
+300   -150 
+300   -250 
+OPEN   2   10  255
+300   -250 
+200   -250 
+OPEN   2   10  255
+300   -50  
+300   -100 
+OPEN   2   10  255
+200   -210 
+200   -100 
+OPEN   2   10  255
+180   -100 
+100   -100 
+T-150  -200  0 0 130 50 0 1 -20 90 0 8 PIN
+P-110 130 0 1 -100 0 0 1 0
+T200   -400  90 0 60 80 90 2 20 100 90 8 PIN
+P130 -100 0 1 130 -190 0 1 0
+T200   200   90 3 50 -20 90 2 10 -170 90 8 PIN
+P100 20 0 1 90 120 0 1 0
+
+HEADER2          32000 32000 100 10 100 10 4 1 0 2 1 0
+TIMESTAMP 2019.11.12.09.37.42
+"Default Font"
+"Default Font"
+0 0 0 4 100 10 "Default Font"
+REF-DES
+-50 -440 0 6 100 10 "Default Font"
+PART-TYPE
+-50 -540 0 6 100 10 "Default Font"
+*
+-50 -640 0 6 100 10 "Default Font"
+*
+CLOSED 5   10  255
+400   710  
+400   482  
+490   482  
+490   710  
+400   710  
+T250   650   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T250   550   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+SOT-89           32000 32000 100 10 100 10 3 2 0 4 0 0
+TIMESTAMP 2021.05.25.11.23.26
+"Default Font"
+"Default Font"
+0 0 0 0 92 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+0 -500 0 0 93 10 "Default Font"
+Comment
+CLOSED 5   1   255
+0     -400 
+0     0    
+600   0    
+600   -400 
+0     -400 
+OPEN   21  10  255
+250   0    
+250   -10  
+250   -20  
+250   -30  
+260   -30  
+260   -40  
+270   -50  
+280   -50  
+280   -60  
+290   -60  
+300   -60  
+310   -60  
+320   -60  
+320   -50  
+330   -50  
+340   -40  
+340   -30  
+350   -30  
+350   -20  
+350   -10  
+350   0    
+T-300  -76   0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 0
+T-300  -216  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 0
+T-300  -352  0 1 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 0
+T900   -190  0 0 -150 0 0 0 -380 0 0 9 PIN150
+P-100 0 0 1 -100 0 0 1 0
+
+DIODE            32000 32000 100 10 100 10 2 2 0 2 26 0
+TIMESTAMP 2020.12.15.01.42.51
+"Default Font"
+"Default Font"
+0 0 0 0 100 10 "Default Font"
+REF-DES
+0 0 0 0 100 10 "Default Font"
+PART-TYPE
+COPCLS 4   1   255
+-50   50   
+50    0    
+-50   -50  
+-50   50   
+OPEN   2   10  255
+50    50   
+50    -50  
+T-150  0     0 1 50 0 0 0 -180 0 0 9 PIN50
+P0 0 0 0 0 0 0 1 192
+T150   0     0 0 50 0 0 0 -180 0 0 9 PIN50
+P0 0 0 0 0 0 0 1 192
+
+PMOS_DIODE       32000 32000 100 10 100 10 3 17 0 3 8 0
+TIMESTAMP 2021.06.08.10.58.28
+"Default Font"
+"Default Font"
+440 10 0 0 100 10 "Default Font"
+REF-DES
+-660 -30 0 0 100 10 "Default Font"
+PART-TYPE
+410 -90 0 0 100 10 "Default Font"
+value
+OPEN   2   10  255
+50    -200 
+50    0    
+OPEN   2   10  255
+0     -200 
+50    -200 
+OPEN   2   10  255
+200   0    
+200   -20  
+OPEN   2   10  255
+108   -184 
+198   -184 
+OPEN   2   10  255
+200   -20  
+100   -20  
+OPEN   2   10  255
+200   0    
+200   -20  
+COPCLS 4   10  255
+166   -124 
+166   -80  
+202   -104 
+166   -124 
+OPEN   2   10  255
+102   -200 
+102   0    
+OPEN   2   10  255
+250   -150 
+350   -150 
+COPCLS 4   10  255
+300   -150 
+250   -100 
+350   -100 
+300   -150 
+OPEN   2   10  255
+200   50   
+300   50   
+OPEN   2   10  255
+300   -50  
+300   50   
+OPEN   2   10  255
+300   -150 
+300   -250 
+OPEN   2   10  255
+300   -250 
+200   -250 
+OPEN   2   10  255
+300   -50  
+300   -100 
+OPEN   2   10  255
+200   -210 
+200   -100 
+OPEN   2   10  255
+180   -100 
+100   -100 
+T-150  -200  0 0 50 0 0 1 90 80 0 8 PIN
+P-100 0 0 1 -100 0 0 1 0
+T200   -400  90 0 50 0 0 1 -10 140 0 8 PIN
+P300 -600 0 1 150 -850 0 1 0
+T200   200   90 3 50 -100 0 1 -50 -130 0 8 PIN
+P700 100 0 1 500 250 0 1 0
+
+PMOS             32000 32000 100 10 100 10 3 10 0 3 0 0
+TIMESTAMP 2021.05.17.06.30.23
+"Default Font"
+"Default Font"
+-220 -410 0 0 100 10 "Default Font"
+REF-DES
+-220 -320 0 0 100 10 "Default Font"
+PART-TYPE
+-220 -510 0 0 100 10 "Default Font"
+value
+OPEN   2   10  255
+50    -200 
+50    0    
+OPEN   2   10  255
+0     -200 
+50    -200 
+OPEN   2   10  255
+200   0    
+200   -20  
+OPEN   2   10  255
+108   -184 
+198   -184 
+OPEN   2   10  255
+200   -100 
+200   -200 
+OPEN   2   10  255
+200   -20  
+100   -20  
+OPEN   2   10  255
+200   0    
+200   -20  
+COPCLS 4   10  255
+166   -124 
+166   -80  
+202   -104 
+166   -124 
+OPEN   2   10  255
+102   -200 
+102   0    
+OPEN   2   10  255
+200   -100 
+100   -100 
+T-150  -200  0 0 120 30 0 1 -30 70 0 8 PIN
+P-90 30 0 1 -90 -90 0 1 0
+T200   -400  90 0 70 70 90 2 30 90 90 8 PIN
+P-40 0 0 1 -40 -100 0 1 0
+T200   200   90 2 90 100 90 2 50 120 90 8 PIN
+P-30 -10 0 1 -20 -110 0 1 0
+
+DIOZ-H           32000 32000 97 10 97 10 4 5 0 2 26 0
+TIMESTAMP 2021.10.13.01.41.51
+"Default Font"
+"Default Font"
+246 150 0 4 100 10 "Default Font"
+REF-DES
+246 250 0 4 100 10 "Default Font"
+PART-TYPE
+246 -150 0 6 100 10 "Default Font"
+PART NUMBER
+246 -250 0 6 100 10 "Default Font"
+VALUE
+COPCLS 4   15  255
+176   80   
+176   -80  
+336   0    
+176   80   
+OPEN   2   10  255
+176   0    
+96    0    
+OPEN   2   10  255
+396   0    
+336   0    
+OPEN   2   10  255
+336   -72  
+384   -120 
+OPEN   3   10  255
+336   -72  
+336   72   
+288   120  
+T496   0     0 1 70 20 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+T-4    0     0 0 70 20 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+
+DIOZ-V           32000 32000 97 10 97 10 4 5 0 2 26 0
+TIMESTAMP 2021.10.13.01.41.51
+"Default Font"
+"Default Font"
+150 -228 0 0 100 10 "Default Font"
+REF-DES
+150 -138 0 0 100 10 "Default Font"
+PART-TYPE
+150 -248 0 2 100 10 "Default Font"
+PART NUMBER
+150 -338 0 2 100 10 "Default Font"
+VALUE
+OPEN   2   10  255
+0     -108 
+0     -168 
+COPCLS 4   15  255
+-80   -328 
+80    -328 
+0     -168 
+-80   -328 
+OPEN   2   10  255
+0     -328 
+0     -408 
+OPEN   3   10  255
+0     -168 
+-96   -168 
+-144  -216 
+OPEN   3   10  255
+0     -168 
+96    -168 
+144   -120 
+T0     -8    0 1 20 -80 0 0 -20 -40 0 9 PINVRTS
+P-500 10 0 1 0 0 0 0 128
+T0     -508  0 3 20 -80 0 0 -20 -40 0 9 PINVRTS
+P-500 10 0 1 0 0 0 0 128
+
+SW_SMT           32000 32000 100 10 100 10 4 6 0 2 0 0
+TIMESTAMP 2016.11.23.05.42.02
+"Default Font"
+"Default Font"
+-550 -350 0 4 100 10 "Default Font"
+REF-DES
+-500 -450 0 6 100 10 "Default Font"
+PART-TYPE
+200 -500 0 6 100 10 "Default Font"
+*
+0 -300 0 6 100 10 "Default Font"
+*
+CIRCLE 2   10  255
+70    100  
+30    100  
+CIRCLE 2   10  255
+170   80   
+170   120  
+COPCLS 5   5   255
+30    180  
+30    160  
+190   160  
+190   180  
+30    180  
+OPEN   2   10  255
+30    100  
+-10   100  
+OPEN   2   10  255
+190   100  
+230   100  
+COPCLS 5   5   255
+78    196  
+78    180  
+142   180  
+142   196  
+78    196  
+T-200  100   0 0 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+T400   100   0 1 140 20 0 1 230 0 0 8 PIN
+P-520 0 0 1 -80 0 0 1 0
+
+LED_BLUE         32000 32000 100 10 100 10 4 8 0 2 26 0
+TIMESTAMP 2017.03.11.07.58.57
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 "Default Font"
+REF-DES
+250 -150 0 6 100 10 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 "Default Font"
+*
+250 -350 0 6 100 10 "Default Font"
+*
+OPEN   2   10  255
+90    0    
+390   0    
+OPEN   2   10  255
+340   90   
+340   -90  
+COPCLS 4   10  255
+190   0    
+190   -90  
+340   0    
+190   0    
+COPCLS 4   10  255
+190   0    
+190   90   
+340   0    
+190   0    
+OPEN   2   10  255
+250   150  
+350   250  
+COPCLS 5   10  255
+350   250  
+290   230  
+320   190  
+330   180  
+350   250  
+OPEN   2   10  255
+350   150  
+450   250  
+COPCLS 5   10  255
+460   260  
+400   240  
+430   200  
+440   190  
+460   260  
+T500   0     0 1 130 14 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+T0     0     0 0 130 14 0 1 170 -30 0 8 PINSHORT
+P-500 10 0 1 0 0 0 0 128
+
+
+*PARTTYPE*   ITEMS
+
+$OSR_SYMS UND  0   0   2     0
+TIMESTAMP 1999.03.30.22.52.06
+OFF 2
+REFIN S 
+REFOUT L 
+
+$GND_SYMS UND  0   0   2     0
+TIMESTAMP 1999.03.30.22.52.06
+GND 3
+GND G GND
+AGND G AGND
+CHGND G CHGND
+
+$PWR_SYMS UND  0   0   2     0
+TIMESTAMP 1999.03.30.22.52.06
+PWR 7
++5V P +5V
+BUBBLE P +5V
+Y P +5V
++12V P +12V
+-5V P -5V
+-12V P -12V
++5VA P +5VA
+
+IND-MOLDED IND  1   0   0     0
+TIMESTAMP 2021.07.12.09.48.16
+GATE 1 2 0
+INDUCTOR
+2 0 U
+1 0 U
+
+CAP UND  1   0   0     0
+TIMESTAMP 2018.08.27.03.37.38
+GATE 1 2 0
+CAP
+1 0 L 1
+2 0 L 2
+
+C0805 CAP  1   0   0     0
+TIMESTAMP 2019.11.13.02.37.05
+GATE 1 2 1
+CAP
+1 0 U
+2 0 U
+
+CAP_02 CP   1   0   0     0
+TIMESTAMP 2019.12.14.06.35.11
+GATE 1 2 0
+CAP_02
+1 0 B 1
+2 0 B 2
+
+NMOS_J51 TTL  1   0   0     0
+TIMESTAMP 2021.07.12.09.46.20
+GATE 1 9 0
+AO3814_NMOS
+1 0 L G1
+2 0 L D1
+3 0 L D1
+4 0 L D1
+5 0 L S2
+6 0 L S2
+7 0 L S2
+8 0 L G2
+9 0 U S1/D2
+
+R1206 RES  1   0   0     0
+TIMESTAMP 2019.11.04.08.25.36
+GATE 4 2 1
+RESISTANCE
+RESZ-V
+RESB-H
+RESB-V
+1 1 U
+2 1 U
+
+C0603 CAP  1   0   0     0
+TIMESTAMP 2019.12.14.06.22.14
+GATE 1 2 0
+CAP
+1 0 L 1
+2 0 L 2
+
+USB_TYPEC_16PIN UND  1   0   0     0
+TIMESTAMP 2018.06.11.03.44.37
+GATE 1 16 0
+USB_TYPEC_16PIN
+A1 0 L GND
+A4 0 L VBUS
+A5 0 L CC1
+A6 0 L D+
+A7 0 L D-
+A8 0 L SBU1
+A9 0 L VBUS
+A12 0 L GND
+B12 0 S GND
+B9 0 S VBUS
+B8 0 S SBU2
+B7 0 S D-
+B6 0 S D+
+B5 0 S CC2
+B4 0 S VBUS
+B1 0 S GND
+
+RU3030M2 TTL  1   0   0     0
+TIMESTAMP 2020.01.04.02.48.47
+GATE 1 9 0
+RU3030M2
+1 0 L S
+2 0 L S
+3 0 L S
+4 0 L G
+5 0 L D
+6 0 L D
+7 0 L D
+8 0 L D
+9 0 U D
+
+R0603 RES  1   0   0     0
+TIMESTAMP 2019.11.04.08.23.54
+GATE 1 2 1
+RESZ-H
+1 0 U
+2 0 U
+
+IP2368 QFP  1   0   0     0
+TIMESTAMP 2021.08.03.12.49.01
+GATE 1 49 0
+IP2368
+1 0 L NC
+2 0 L LT
+3 0 L NC
+4 0 L LED3/IIC_INT
+5 0 L HLED
+6 0 L NC
+7 0 L NC
+8 0 L VBUS
+9 0 L VBUSG
+10 0 L VBUSI
+11 0 S AGND
+12 0 S VIO
+13 0 S CSP1
+14 0 S CSN1
+15 0 S PCIN
+16 0 S HG1
+17 0 S BST1
+18 0 S LX1
+19 0 S LG1
+20 0 S LG2
+21 0 L LX2
+22 0 L BST2
+23 0 L HG2
+24 0 L PCON
+25 0 L CSN2
+26 0 L CSP2
+27 0 L BAT
+28 0 L LX
+29 0 L VCC5V
+30 0 L AGND
+31 0 S NC
+32 0 S VCCIO
+33 0 S BAT_NUM
+34 0 S FCAP
+35 0 S VSET
+36 0 S ISET
+37 0 S NTC
+38 0 S CC2
+39 0 S DPC
+40 0 S DMC
+41 0 S CC1
+42 0 S LED2/IIC_SDA
+43 0 S LED1/IIC_SCL
+44 0 S NC
+45 0 S NC
+46 0 S BAT_MODE
+47 0 S ISET_MODE
+48 0 S NC
+49 0 S EPAD
+
+HEADER4 J    1   0   0     0
+TIMESTAMP 2019.11.12.09.36.52
+GATE 1 4 0
+HEADER4
+1 0 U
+2 0 U
+3 0 U
+4 0 U
+
+LED-1 DIO  1   0   0     0
+TIMESTAMP 2021.01.20.09.51.10
+GATE 2 2 0
+LED
+LED-V
+2 0 U
+1 0 U
+
+BAT UND  1   0   0     0
+TIMESTAMP 2020.10.13.01.27.50
+GATE 1 1 0
+BAT
+1 0 L TP
+
+BAT_1PIN J    1   0   0     0
+TIMESTAMP 2021.01.20.09.54.03
+GATE 1 1 0
+BAT_1PIN
+1 0 L 1
+
+RU30L30M TTL  1   0   0     0
+TIMESTAMP 2021.09.09.02.27.36
+GATE 1 9 0
+RU30L30M
+1 0 L S
+2 0 L S
+3 0 L S
+4 0 L G
+5 0 L D
+6 0 L D
+7 0 L D
+8 0 L D
+9 0 U D
+
+NMOS TRX  1   0   0     3
+TIMESTAMP 2021.07.15.09.12.22
+GATE 1 3 0
+NMOS_DIOD
+2 0 U 1
+1 0 U 2
+3 0 U 3
+2 1 3 
+
+HEADER2 J    1   0   0     0
+TIMESTAMP 2019.11.12.09.37.42
+GATE 1 2 0
+HEADER2
+1 0 U
+2 0 U
+
+7750-2-5VLDO TTL  1   0   0     0
+TIMESTAMP 2021.05.25.11.25.26
+GATE 1 4 0
+SOT-89
+1 0 L GND
+2 0 L VIN
+3 0 L VOUT
+4 0 L NC
+
+5189 DIO  1   0   0     0
+TIMESTAMP 2020.12.15.01.42.51
+GATE 1 2 0
+DIODE
+A 0 L 1
+K 0 L 2
+
+PMOS_1 TRX  1   0   0     3
+TIMESTAMP 2021.06.08.10.58.28
+GATE 2 3 0
+PMOS_DIODE
+PMOS
+G 0 U 1
+S 0 U 2
+D 0 U 3
+G S D 
+
+ZENER-DIODE DIO  1   0   0     2
+TIMESTAMP 2021.10.13.01.41.51
+GATE 2 2 1
+DIOZ-H
+DIOZ-V
+K 0 U
+A 0 U
+K A 
+
+SW2 UND  1   0   0     0
+TIMESTAMP 2015.09.25.07.21.27
+GATE 1 2 0
+SW_SMT
+1 0 U
+2 0 U
+
+LED_BLUE DIO  1   0   0     2
+TIMESTAMP 2017.03.11.07.58.57
+GATE 2 2 0
+LED_BLUE
+LED-V
+K 0 U
+A 0 U
+A K 
+
+
+
+*PART*       ITEMS
+
+
+
+U1           IP2368           9252  12978  90 3 97 10 97 10 4 2 49 0 0 0
+"Default Font"
+"Default Font"
+2600 2640 0 0 97 10 0 "Default Font"
+REF-DES
+1570 1164 90 1 97 10 0 "Default Font"
+PART-TYPE
+3030 -356 0 2 97 10 0 "Default Font"
+*
+3030 -456 0 2 97 10 0 "Default Font"
+*
+"Value" IP6559
+"PCB DECAL" QFN48
+0 140 20 0 1
+1 140 20 0 1
+2 140 20 0 1
+3 140 20 0 1
+4 140 20 0 1
+5 140 20 0 1
+6 140 20 0 1
+7 140 20 0 1
+8 140 20 0 1
+9 140 20 0 1
+10 150 -100 0 1
+11 150 -100 0 1
+12 150 -100 0 1
+13 150 -100 0 1
+14 150 -100 0 1
+15 150 -100 0 1
+16 150 -100 0 1
+17 150 -100 0 1
+18 150 -100 0 1
+19 150 -94 0 1
+20 132 -92 0 1
+21 144 -90 0 1
+22 142 -92 0 1
+23 140 -90 0 1
+24 140 20 0 1
+25 140 20 0 1
+26 140 20 0 1
+27 140 20 0 1
+28 140 20 0 1
+29 140 20 0 1
+30 150 -100 0 1
+31 150 -100 0 1
+32 150 -100 0 1
+33 150 -100 0 1
+34 150 -100 0 1
+35 150 -100 0 1
+36 150 -100 0 1
+37 150 -100 0 1
+38 150 -100 0 1
+39 150 -100 0 1
+40 150 -100 0 1
+41 150 -100 0 1
+42 150 -100 0 1
+43 150 -100 0 1
+44 150 -100 0 1
+45 150 -100 0 1
+46 150 -100 0 1
+47 150 -100 0 1
+48 150 -100 0 1
+
+L1           IND-MOLDED       11212 7938    0 1 100 10 100 10 3 3 2 0 0 26
+"Default Font"
+"Default Font"
+250 300 0 4 100 10 0 "Default Font"
+REF-DES
+250 250 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+Value
+"Description" 电感
+"Value" 10uH
+"PCB DECAL" L1406
+0 70 30 0 1
+1 60 30 0 1
+
+C4           CAP              11452 8628    0 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+170 -300 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+120 -340 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 0.1uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C1           CAP              10462 8618    0 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-260 -270 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-350 -320 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 0.1uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C2           C0805            15352 8728    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+130 -280 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+90 -330 0 2 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C3           C0805            15020 8728    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+112 -280 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+82 -320 0 2 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C5           C0805            14622 8728    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+130 -280 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+90 -320 0 2 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C6           C0805            14332 8728    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+-230 -280 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-260 -320 0 2 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+CP1          CAP_02           15612 8412    0 0 97 10 97 10 3 4 2 0 0 26
+"Default Font"
+"Default Font"
+270 36 0 0 97 10 0 "Default Font"
+REF-DES
+0 0 0 0 97 10 0 "Default Font"
+PART-TYPE
+156 8 0 2 97 10 1 "Default Font"
+Value
+"Tolerance" 10%
+"Description" 插件电容
+"Value" 100uF/35V
+"PCB DECAL" CAP-5-5
+0 -50 0 0 0
+1 -50 0 0 0
+
+U2           NMOS_J51         9242  8178   90 2 100 10 100 10 2 4 9 0 0 0
+"Default Font"
+"Default Font"
+0 0 0 0 92 10 0 "Default Font"
+REF-DES
+122 50 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Description" 锂电NMOS
+"Value" RUH30J51M
+"model" LB
+"PCB DECAL" MOS_J51_1
+0 -150 0 0 0
+1 -150 0 0 0
+2 -150 0 0 0
+3 -150 0 0 0
+4 -150 0 0 0
+5 -150 0 0 0
+6 -150 0 0 0
+7 -150 0 0 0
+8 140 20 0 1
+
+U3           NMOS_J51         13022 8178   90 3 100 10 100 10 2 4 9 0 0 0
+"Default Font"
+"Default Font"
+14 18 0 0 92 10 0 "Default Font"
+REF-DES
+118 14 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Description" 锂电NMOS
+"Value" RUH30J51M
+"model" LB
+"PCB DECAL" MOS_J51_1
+0 -150 0 0 0
+1 -150 0 0 0
+2 -150 0 0 0
+3 -150 0 0 0
+4 -150 0 0 0
+5 -150 0 0 0
+6 -150 0 0 0
+7 -150 0 0 0
+8 140 20 0 1
+
+R1           R1206            7442  8668    0 3 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+300 -230 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+270 200 0 6 97 10 3 "Regular Microsoft Sans Serif"
+Value
+300 -200 0 6 97 10 0 "Default Font"
+*
+"Description" 贴片电阻
+"Value" 0.005R
+"Tolerance" 1%
+"PCB DECAL" 1206R
+0 34 16 0 0
+1 0 20 0 0
+
+C7           C0805            6602  8258    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+150 -210 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+150 -240 0 2 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C8           C0603            7542  9318   90 3 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-140 -300 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+150 -300 90 1 97 10 3 "Regular Microsoft Sans Serif"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 1uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+USB1         USB_TYPEC_16PIN  2512  9026    0 1 97 10 97 10 4 1 16 0 0 2
+"Default Font"
+"Default Font"
+444 1352 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+300 -40 0 6 97 10 0 "Default Font"
+PART-TYPE
+300 -140 0 6 97 10 0 "Default Font"
+*
+300 -240 0 6 97 10 0 "Default Font"
+*
+"PCB DECAL" USB-TYPEC-1
+0 140 20 0 1
+1 132 20 0 1
+2 140 20 0 1
+3 140 20 0 1
+4 140 20 0 1
+5 140 20 0 1
+6 140 20 0 1
+7 140 20 0 1
+8 140 20 0 1
+9 140 20 0 1
+10 140 20 0 1
+11 140 20 0 1
+12 140 20 0 1
+13 140 20 0 1
+14 140 20 0 1
+15 140 20 0 1
+
+C11          CAP              3844  9680    0 1 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-312 -202 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-372 -292 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 10uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+U4           RU3030M2         4534  9626    0 2 97 10 97 10 3 4 9 0 0 0
+"Default Font"
+"Default Font"
+14 118 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+174 118 0 0 97 10 0 "Default Font"
+PART-TYPE
+218 -374 90 1 97 10 1 "Regular Microsoft Sans Serif"
+model
+"Description" 锂电NMOS
+"Value" RU3030M2
+"model" NMOS
+"PCB DECAL" RU3030M2
+0 -150 0 0 0
+1 -150 0 0 0
+2 -150 0 0 0
+3 -150 0 0 0
+4 -150 0 0 0
+5 -150 0 0 0
+6 -150 0 0 0
+7 -150 0 0 0
+8 140 20 0 1
+
+R2           R1206            13492 8728    0 0 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+Value
+300 -200 0 6 97 10 0 "Default Font"
+*
+"Description" 贴片电阻
+"Value" 0.005R
+"Tolerance" 1%
+"PCB DECAL" 1206R
+0 34 16 0 0
+1 0 20 0 0
+
+C13          C0603            10422 7138    0 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+150 -210 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+150 -240 0 2 97 10 3 "Regular Lucida Sans Unicode"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 1nF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C14          C0603            11422 7138    0 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+150 -210 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+150 -240 0 2 97 10 3 "Regular Lucida Sans Unicode"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 1nF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+R3           R0603            10422 7248   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+370 -200 90 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+170 -200 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 2R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R4           R0603            11422 7248   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+350 -200 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+160 -200 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 2R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+C15          C0805            6164  7886   90 1 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+290 -160 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+90 -180 90 1 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C16          C0805            6164  6936   90 1 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+200 -130 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+30 -170 90 1 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C17          C0805            6164  7416   90 1 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+220 -130 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+30 -180 90 1 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C18          C0805            6164  6376   90 1 97 10 97 10 4 4 2 0 0 26
+"Default Font"
+"Default Font"
+250 -130 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+70 -190 90 1 97 10 3 "Default Font"
+VALUE
+150 -340 0 2 97 10 0 "Default Font"
+*
+"VALUE" 22uF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0805C
+0 20 -90 0 0
+1 20 -80 0 0
+
+CP2          CAP_02           5834  8326   90 1 97 10 97 10 3 4 2 0 0 26
+"Default Font"
+"Default Font"
+418 158 90 0 97 10 0 "Default Font"
+REF-DES
+0 0 0 0 97 10 0 "Default Font"
+PART-TYPE
+218 42 90 1 97 10 1 "Default Font"
+Value
+"Tolerance" 10%
+"Description" 插件电容
+"Value" 100uF/35V
+"PCB DECAL" CAP-5-5
+0 -50 0 0 0
+1 -50 0 0 0
+
+C19          C0603            13688 11780  90 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-36 -172 90 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-112 -560 90 1 97 10 3 "Regular Microsoft Sans Serif"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C20          C0603            14196 11180  90 3 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+124 -476 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+48 -160 90 1 97 10 3 "Regular Microsoft Sans Serif"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+R5           R0603            8492  8478    0 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+320 70 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+320 -80 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 0R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R6           R0603            8572  7378    0 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 0R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R7           R0603            13072 8478    0 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 0R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R8           R0603            13122 7378    0 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 0R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+C21          C0603            13542 9578   90 0 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+230 -320 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-220 -320 90 1 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 1uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+R9           R0603            13302 8858   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+390 -130 90 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+190 -130 90 5 97 10 3 "Regular Lucida Sans Unicode"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 10R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R19          R0603            7504  8718   90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+380 150 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+170 170 90 5 97 10 3 "Regular Lucida Sans Unicode"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 10R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RNTC         R0603            12352 13420   0 2 100 10 100 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+88 132 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 100 10 0 "Default Font"
+PART-TYPE
+338 192 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 100 10 0 "Default Font"
+*
+"VALUE" 10K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+C23          C0603            12320 13780  90 2 100 10 100 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-112 -470 90 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 100 10 0 "Default Font"
+PART-TYPE
+-182 -740 90 1 97 10 3 "Regular Microsoft Sans Serif"
+Value
+150 -340 0 2 100 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 0.1uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+H1           HEADER4          8120  13436   0 0 100 10 100 10 4 1 4 0 0 1
+"Default Font"
+"Default Font"
+0 0 0 4 100 10 0 "Default Font"
+REF-DES
+320 218 0 6 100 10 0 "Default Font"
+PART-TYPE
+-50 -540 0 6 100 10 0 "Default Font"
+*
+-50 -640 0 6 100 10 0 "Default Font"
+*
+"PCB DECAL" HEADER4
+0 140 20 0 1
+1 140 20 0 1
+2 140 20 0 1
+3 140 20 0 1
+
+R10          R0603            10656 13340  90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+368 292 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+164 352 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 100R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R11          R0603            8760  11776   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+448 -178 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+238 -108 0 6 97 10 3 "Regular Lucida Sans Unicode"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" NC
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+D1           LED-1            6668  12592  90 2 100 10 100 10 4 6 2 0 0 25
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 0 "Default Font"
+REF-DES
+66 226 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 0 "Default Font"
+*
+250 -350 0 6 100 10 0 "Default Font"
+*
+"Sim.Analog.Model" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Prefix" D
+"Description" LED
+"Manufacturer #1" IPC SM-782 STD.
+"PCB DECAL" 0603D
+0 130 14 0 1
+1 130 14 0 1
+
+HLED         LED-1            8008  11776   0 3 100 10 100 10 4 6 2 0 0 25
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 0 "Default Font"
+REF-DES
+36 118 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 0 "Default Font"
+*
+250 -350 0 6 100 10 0 "Default Font"
+*
+"Sim.Analog.Model" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Prefix" D
+"Description" LED
+"Manufacturer #1" IPC SM-782 STD.
+"PCB DECAL" 0603D
+0 130 14 0 1
+1 130 14 0 1
+
+RBATM        R0603            13536 11976   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+-84 28 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+-348 100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 13.7k
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RCAP         R0603            13528 12172   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+-44 36 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+-296 100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 6.2K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RVSET        R0603            13524 12376   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+-52 28 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+-308 96 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 10K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RISET        R0603            13516 12572   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+-32 20 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+-316 104 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 30K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RBAT_MODE    R0603            10064 13952  90 2 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+464 -168 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+104 -98 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" NC
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+RISET_MODE   R0603            9860  13944  90 2 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+436 -132 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+76 -64 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" NC
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+BAT          BAT              17724 8088   90 3 100 10 100 10 2 2 1 0 0 10
+"Default Font"
+"Default Font"
+-24 -128 90 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Comment" B+
+"PCB DECAL" BATPAD_3_4
+0 -176 16 0 0
+
+GND          BAT              17732 7412   90 1 100 10 100 10 2 2 1 0 0 10
+"Default Font"
+"Default Font"
+308 -132 90 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Comment" B+
+"PCB DECAL" BATPAD_3_4
+0 -176 24 0 0
+
+R12          R0603            5048  10908   0 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+406 132 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+230 196 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 0R
+"Description" Resistor
+"PCB DECAL" 1206R
+0 34 16 0 0
+1 0 20 0 0
+
+D3           LED-1            7892  12588  90 2 100 10 100 10 4 6 2 0 0 25
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 0 "Default Font"
+REF-DES
+66 226 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 0 "Default Font"
+*
+250 -350 0 6 100 10 0 "Default Font"
+*
+"Sim.Analog.Model" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Prefix" D
+"Description" LED
+"Manufacturer #1" IPC SM-782 STD.
+"PCB DECAL" 0603D
+0 130 14 0 1
+1 130 14 0 1
+
+D4           LED-1            8372  12080  90 1 100 10 100 10 4 6 2 0 0 25
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 0 "Default Font"
+REF-DES
+66 226 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 0 "Default Font"
+*
+250 -350 0 6 100 10 0 "Default Font"
+*
+"Sim.Analog.Model" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Prefix" D
+"Description" LED
+"Manufacturer #1" IPC SM-782 STD.
+"PCB DECAL" 0603D
+0 130 14 0 1
+1 130 14 0 1
+
+D2           LED-1            7256  12088  90 1 100 10 100 10 4 6 2 0 0 25
+"Default Font"
+"Default Font"
+100 200 0 4 100 10 0 "Default Font"
+REF-DES
+66 226 0 6 100 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 100 10 0 "Default Font"
+*
+250 -350 0 6 100 10 0 "Default Font"
+*
+"Sim.Analog.Model" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Prefix" D
+"Description" LED
+"Manufacturer #1" IPC SM-782 STD.
+"PCB DECAL" 0603D
+0 130 14 0 1
+1 130 14 0 1
+
+R13          R0603            10860 13948  90 2 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+220 296 0 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+428 372 0 6 97 10 3 "Default Font"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 100R
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+LT           BAT_1PIN         8804  12476   0 1 100 10 100 10 2 3 1 0 0 26
+"Default Font"
+"Default Font"
+-136 -68 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+-6 -292 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Description" 锂电焊盘
+"model" LB
+"PCB DECAL" TP_2MMB
+0 -20 0 0 0
+
+VBUS         BAT_1PIN         2976  10952   0 1 100 10 100 10 2 3 1 0 0 26
+"Default Font"
+"Default Font"
+-276 -72 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+-6 -292 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Description" 锂电焊盘
+"model" LB
+"PCB DECAL" BAT/2/1AA
+0 -20 0 0 0
+
+GND1         BAT_1PIN         2968  11288   0 1 100 10 100 10 2 3 1 0 0 26
+"Default Font"
+"Default Font"
+-276 -72 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+-6 -292 0 0 100 10 0 "Default Font"
+PART-TYPE
+"Description" 锂电焊盘
+"model" LB
+"PCB DECAL" BAT/2/1AA
+0 -20 0 0 0
+
+R14          R0603            3468  9186   90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+366 176 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+170 170 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 10k
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R15          R0603            6300  11330  90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+334 -364 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+154 -268 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" NC/510K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+U5           RU30L30M         16636 8484   90 1 100 10 100 10 4 4 9 0 0 2
+"Default Font"
+"Default Font"
+56 44 90 0 92 10 0 "Default Font"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+104 120 0 2 100 10 1 "Default Font"
+Value
+208 -368 90 1 97 10 1 "Regular Microsoft Sans Serif"
+model
+"Description" PMOS
+"Value" RU30L30M
+"model" PMOS
+"PCB DECAL" MOS_9
+0 -150 0 0 0
+1 -150 0 0 0
+2 -150 0 0 0
+3 -150 0 0 0
+4 -150 0 0 0
+5 -150 0 0 0
+6 -150 0 0 0
+7 -150 0 0 0
+8 140 20 0 1
+
+Q1           NMOS             16032 6664    0 0 100 10 100 10 3 2 3 0 0 10
+"Default Font"
+"Default Font"
+-188 -408 0 0 100 10 0 "Default Font"
+REF-DES
+-480 -400 0 0 100 10 0 "Default Font"
+PART-TYPE
+284 -312 0 2 100 10 1 "Default Font"
+Comment
+"PCB DECAL" SOT_23
+"Comment" 2N7002
+0 130 50 0 1
+1 60 80 90 2
+2 104 -36 90 2
+
+R16          R0603            16376 7652    0 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 200K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R17          R0603            16236 6940   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+300 100 0 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+300 -100 0 6 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 100K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R18          R0603            15268 5756   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+376 212 90 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+188 228 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" 1M
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+C9           C0603            15636 6360    0 1 97 10 97 10 4 10 2 0 0 26
+"Default Font"
+"Default Font"
+-260 -260 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-312 -328 0 2 97 10 3 "Regular Microsoft Sans Serif"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Value" 100nF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0603C
+"Comment" 10uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+0 20 -90 0 0
+1 20 -80 0 0
+
+R20          R0603            16980 8448   90 0 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+416 -244 90 4 97 10 0 "Default Font"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+208 -268 90 5 97 10 3 "Regular Microsoft Sans Serif"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"VALUE" NC/0R
+"Description" Resistor
+"PCB DECAL" 1206R
+0 34 16 0 0
+1 0 20 0 0
+
+H3           HEADER2          7084  10572   0 0 100 10 100 10 4 1 2 0 0 3
+"Default Font"
+"Default Font"
+0 0 0 4 100 10 0 "Default Font"
+REF-DES
+368 452 0 6 100 10 0 "Default Font"
+PART-TYPE
+-50 -540 0 6 100 10 0 "Default Font"
+*
+-50 -640 0 6 100 10 0 "Default Font"
+*
+"PCB DECAL" HEADER2
+0 140 20 0 1
+1 140 20 0 1
+
+U6           7750-2-5VLDO     1914  13644  90 3 100 10 100 10 3 2 4 0 0 2
+"Default Font"
+"Default Font"
+320 74 90 0 92 10 0 "Default Font"
+REF-DES
+336 -1082 90 0 100 10 0 "Default Font"
+PART-TYPE
+346 -798 90 0 97 10 2 "Regular Microsoft Sans Serif"
+Comment
+"Comment" 5V LDO
+"PCB DECAL" SOT-89
+0 -150 0 0 0
+1 -150 0 0 0
+2 -150 0 0 0
+3 -150 0 0 0
+
+N3           NMOS             3134  13264   0 1 100 10 100 10 4 2 3 0 0 18
+"Default Font"
+"Default Font"
+562 244 0 4 100 10 0 "Default Font"
+REF-DES
+496 344 0 6 100 10 0 "Default Font"
+PART-TYPE
+0 -200 0 6 100 10 0 "Default Font"
+*
+0 -300 0 6 100 10 0 "Default Font"
+*
+"Value" NMOS
+"PCB DECAL" SOT_23
+0 140 20 0 1
+1 140 20 0 1
+2 140 20 0 1
+
+N4           NMOS             5230  13576   0 1 100 10 100 10 4 2 3 0 0 16
+"Default Font"
+"Default Font"
+518 132 0 4 100 10 0 "Default Font"
+REF-DES
+518 116 0 6 100 10 0 "Default Font"
+PART-TYPE
+0 -200 0 6 100 10 0 "Default Font"
+*
+0 -300 0 6 100 10 0 "Default Font"
+*
+"Value" NMOS
+"PCB DECAL" SOT_23
+0 140 20 0 1
+1 140 20 0 1
+2 140 20 0 1
+
+R41          R0603            5638  13276  90 3 100 10 100 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+256 190 90 4 100 10 0 "Default Font"
+REF-DES
+310 200 0 4 100 10 0 "Default Font"
+PART-TYPE
+310 198 90 5 97 10 3 "Regular Lucida Sans Unicode"
+VALUE
+300 -200 0 6 100 10 0 "Default Font"
+*
+"VALUE" 1M
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R42          R0603            3528  12960  90 3 100 10 100 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+264 208 90 4 100 10 0 "Default Font"
+REF-DES
+310 200 0 4 100 10 0 "Default Font"
+PART-TYPE
+316 218 90 5 97 10 3 "Regular Lucida Sans Unicode"
+VALUE
+300 -200 0 6 100 10 0 "Default Font"
+*
+"VALUE" 1M
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R43          R0603            2502  14764  90 3 100 10 100 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+274 -192 90 4 100 10 0 "Default Font"
+REF-DES
+310 200 0 4 100 10 0 "Default Font"
+PART-TYPE
+332 -182 90 5 97 10 3 "Default Font"
+VALUE
+300 -200 0 6 100 10 0 "Default Font"
+*
+"VALUE" 10k
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R44          R0603            4702  14460  90 0 100 10 100 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+372 164 90 4 100 10 0 "Default Font"
+REF-DES
+310 200 0 4 100 10 0 "Default Font"
+PART-TYPE
+170 180 90 5 97 10 3 "Default Font"
+VALUE
+300 -200 0 6 100 10 0 "Default Font"
+*
+"VALUE" 10K
+"Description" Resistor
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+D5           5189             2062  15088   0 0 100 10 100 10 2 18 2 0 0 26
+"Default Font"
+"Default Font"
+-30 78 0 0 100 10 0 "Default Font"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+"VALUE" IN4148
+"Part_Field_Name_1" SS34/NC
+"Part_Field_Name_2" Part Field 2
+"Part_Field_Name_3" Part Field 3
+"Part_Field_Name_4" Part Field 4
+"Part_Field_Name_5" Part Field 5
+"Part_Field_Name_6" Part Field 6
+"Part_Field_Name_7" Part Field 7
+"Part_Field_Name_8" Part Field 8
+"Part_Field_Name_9" Part Field 9
+"Part_Field_Name_10" 1N5189
+"Part_Field_Name_11" Part Field 11
+"Part_Field_Name_12" Part Field 12
+"Part_Field_Name_13" Part Field 13
+"Part_Field_Name_14" Part Field 14
+"Part_Field_Name_15" Part Field 15
+"Part_Field_Name_16" Part Field 16
+"PCB DECAL" SOD-123A
+0 50 0 0 0
+1 50 0 0 0
+
+C25          C0603            1838  14076   0 2 100 10 100 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+154 -344 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 100 10 0 "Default Font"
+PART-TYPE
+150 -136 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 100 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C24          C0603            1242  14076   0 2 100 10 100 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+-300 -270 0 0 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+210 -40 0 2 100 10 0 "Default Font"
+PART-TYPE
+-330 -98 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 100 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+Q2           PMOS_1           3138  14616  90 1 100 10 100 10 2 1 3 0 0 10
+"Default Font"
+"Default Font"
+52 100 90 0 100 10 0 "Default Font"
+REF-DES
+-178 -26 90 0 100 10 0 "Default Font"
+PART-TYPE
+"PCB DECAL" SOT23
+0 142 86 90 1
+1 50 0 0 1
+2 50 -100 0 1
+
+Q3           PMOS_1           5230  14896  90 1 100 10 100 10 2 1 3 0 0 10
+"Default Font"
+"Default Font"
+-30 -20 90 0 100 10 0 "Default Font"
+REF-DES
+-660 -30 0 0 100 10 0 "Default Font"
+PART-TYPE
+"PCB DECAL" SOT23
+0 170 82 90 1
+1 50 0 0 1
+2 50 -100 0 1
+
+C10          C0603            3292  12936   0 0 97 10 97 10 4 10 2 0 0 26
+"Default Font"
+"Default Font"
+-240 -192 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-272 -312 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Value" 100nF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0603C
+"Comment" 10uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+0 20 -90 0 0
+1 20 -80 0 0
+
+C12          C0603            5400  13216   0 0 97 10 97 10 4 10 2 0 0 26
+"Default Font"
+"Default Font"
+-204 -168 0 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+-260 -340 0 2 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Value" 100nF
+"Description" Capacitor
+"Sim.Analog.Prefix" C
+"PCB DECAL" 0603C
+"Comment" 10uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+0 20 -90 0 0
+1 20 -80 0 0
+
+D7           ZENER-DIODE      9844  8648    0 0 97 10 97 10 4 10 2 0 0 26
+"Default Font"
+"Default Font"
+246 150 0 4 100 10 0 "Default Font"
+REF-DES
+246 250 0 4 100 10 0 "Default Font"
+PART-TYPE
+246 -150 0 6 100 10 3 "Default Font"
+Part Number
+246 -250 0 6 100 10 3 "Default Font"
+Value
+"Tolerance" 
+"Manufacturer #1" 
+"Value" 
+"Part Number" 
+"Cost" 
+"Description" GENERIC ZENER-DIODE
+"Sim.Analog.Prefix" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Model" 
+"PCB DECAL" SOD-123A
+0 70 20 0 1
+1 70 20 0 1
+
+D6           ZENER-DIODE      12112 8572    0 1 97 10 97 10 4 10 2 0 0 26
+"Default Font"
+"Default Font"
+246 150 0 4 100 10 0 "Default Font"
+REF-DES
+246 250 0 4 100 10 0 "Default Font"
+PART-TYPE
+246 -150 0 6 100 10 3 "Default Font"
+Part Number
+246 -250 0 6 100 10 3 "Default Font"
+Value
+"Tolerance" 
+"Manufacturer #1" 
+"Value" 
+"Part Number" 
+"Cost" 
+"Description" GENERIC ZENER-DIODE
+"Sim.Analog.Prefix" 
+"Sim.Analog.Order" Model$
+"Sim.Analog.Model" 
+"PCB DECAL" SOD-123A
+0 70 20 0 1
+1 70 20 0 1
+
+SW           SW2              16492 12436  90 2 97 10 97 10 4 1 2 0 0 2
+"Default Font"
+"Default Font"
+120 -66 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+-500 -450 0 6 97 10 0 "Default Font"
+PART-TYPE
+200 -500 0 6 97 10 0 "Default Font"
+*
+0 -300 0 6 97 10 0 "Default Font"
+*
+"PCB DECAL" SW4_SMT_3_6
+0 140 20 0 1
+1 140 20 0 1
+
+D10          LED_BLUE         15948 12422  90 3 97 10 97 10 4 3 2 0 0 26
+"Default Font"
+"Default Font"
+264 -212 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+250 -150 0 6 97 10 0 "Default Font"
+PART-TYPE
+250 -250 0 6 97 10 0 "Default Font"
+*
+250 -350 0 6 97 10 0 "Default Font"
+*
+"Sim.Analog.Prefix" BLUE
+"Description" LED
+"PCB DECAL" LED
+0 130 14 0 1
+1 130 14 0 1
+
+R21          R0603            15944 12578  90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+442 -178 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+264 -182 90 5 97 10 3 "Default Font"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"Description" Resistor
+"VALUE" 20R
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+R22          R0603            16392 12676  90 1 97 10 97 10 4 3 2 0 0 18
+"Default Font"
+"Default Font"
+260 206 90 4 97 10 0 "Regular Microsoft Sans Serif"
+REF-DES
+310 200 0 4 97 10 0 "Default Font"
+PART-TYPE
+72 198 90 5 97 10 3 "Default Font"
+VALUE
+300 -200 0 6 97 10 0 "Default Font"
+*
+"Description" Resistor
+"VALUE" 10K
+"PCB DECAL" 0603R
+0 34 16 0 0
+1 0 20 0 0
+
+C22          C0603            8124  10092  90 3 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+124 -476 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+48 -160 90 1 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+C26          C0603            15296 10784  90 3 97 10 97 10 4 9 2 0 0 26
+"Default Font"
+"Default Font"
+124 -476 90 0 97 10 0 "Default Font"
+REF-DES
+210 -40 0 2 97 10 0 "Default Font"
+PART-TYPE
+48 -160 90 1 97 10 3 "Default Font"
+Value
+150 -340 0 2 97 10 0 "Default Font"
+*
+"Description" Capacitor
+"Comment" 10uF
+"Value" 2.2uF
+"Publisher" Altium Limited
+"PackageReference" RAD-0.3
+"LatestRevisionNote" Re-released for DXP Platform.
+"LatestRevisionDate" 17-Jul-2002
+"Published" 8-Jun-2000
+"PCB DECAL" 0603C
+0 20 -90 0 0
+1 20 -80 0 0
+
+D8           5189             2426  5768    0 0 100 10 100 10 2 18 2 0 0 26
+"Default Font"
+"Default Font"
+-30 78 0 0 100 10 0 "Default Font"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+"VALUE" IN4148
+"Part_Field_Name_1" SS34/NC
+"Part_Field_Name_2" Part Field 2
+"Part_Field_Name_3" Part Field 3
+"Part_Field_Name_4" Part Field 4
+"Part_Field_Name_5" Part Field 5
+"Part_Field_Name_6" Part Field 6
+"Part_Field_Name_7" Part Field 7
+"Part_Field_Name_8" Part Field 8
+"Part_Field_Name_9" Part Field 9
+"Part_Field_Name_10" 1N5189
+"Part_Field_Name_11" Part Field 11
+"Part_Field_Name_12" Part Field 12
+"Part_Field_Name_13" Part Field 13
+"Part_Field_Name_14" Part Field 14
+"Part_Field_Name_15" Part Field 15
+"Part_Field_Name_16" Part Field 16
+"PCB DECAL" SOD-123A
+0 50 0 0 0
+1 50 0 0 0
+
+D9           5189             2426  6160    0 0 100 10 100 10 2 18 2 0 0 26
+"Default Font"
+"Default Font"
+-30 78 0 0 100 10 0 "Default Font"
+REF-DES
+0 0 0 0 100 10 0 "Default Font"
+PART-TYPE
+"VALUE" IN4148
+"Part_Field_Name_1" SS34/NC
+"Part_Field_Name_2" Part Field 2
+"Part_Field_Name_3" Part Field 3
+"Part_Field_Name_4" Part Field 4
+"Part_Field_Name_5" Part Field 5
+"Part_Field_Name_6" Part Field 6
+"Part_Field_Name_7" Part Field 7
+"Part_Field_Name_8" Part Field 8
+"Part_Field_Name_9" Part Field 9
+"Part_Field_Name_10" 1N5189
+"Part_Field_Name_11" Part Field 11
+"Part_Field_Name_12" Part Field 12
+"Part_Field_Name_13" Part Field 13
+"Part_Field_Name_14" Part Field 14
+"Part_Field_Name_15" Part Field 15
+"Part_Field_Name_16" Part Field 16
+"PCB DECAL" SOD-123A
+0 50 0 0 0
+1 50 0 0 0
+
+
+*BUSSES*
+
+
+*OFFPAGE REFS*
+
+
+
+@@@O0    GND $GND_SYMS 6602   7678   0 0 0
+@@@O1    HG1 $OSR_SYMS 10260  9316   90 0 0
+@@@O2    LG1 $OSR_SYMS 10860  9312   90 0 0
+@@@O3    LG2 $OSR_SYMS 11060  9316   90 0 0
+@@@O4    HG2 $OSR_SYMS 11648  9328   90 0 0
+@@@O5    CC1 $OSR_SYMS 2844   9826   0 1 0
+@@@O6    DPC $OSR_SYMS 2844   9726   0 1 0
+@@@O7    DMC $OSR_SYMS 2844   9624   0 1 0
+@@@O8    VBUS $OSR_SYMS 2838   9428   0 1 0
+@@@O9    VBUS $OSR_SYMS 1342   9428   0 0 0
+@@@O10   CC2 $OSR_SYMS 1342   9526   0 0 0
+@@@O11   DPC $OSR_SYMS 1338   9626   0 0 0
+@@@O12   DMC $OSR_SYMS 1336   9726   0 0 0
+@@@O13   VBUS $OSR_SYMS 1350   9926   0 0 0
+@@@O14   GND $GND_SYMS 1360   10228  90 1 0
+@@@O15   GND $GND_SYMS 2842   10228  90 0 0
+@@@O16   GND $GND_SYMS 1340   9126   90 1 0
+@@@O17   GND $GND_SYMS 2838   9126   90 0 0
+@@@O18   VBUSI $OSR_SYMS 5820   9720   0 1 0
+@@@O19   VBUSG $OSR_SYMS 4046   10026  0 0 0
+@@@O20   GND $GND_SYMS 12722  7158   0 0 0
+@@@O21   GND $GND_SYMS 9542   7078   0 0 0
+@@@O22   GND $GND_SYMS 10422  6448   0 0 0
+@@@O23   GND $GND_SYMS 11422  6458   0 0 0
+@@@O24   GND $GND_SYMS 14804  11380  90 0 0
+@@@O25   GND $GND_SYMS 9464   14316  0 3 0
+@@@O26   GND $GND_SYMS 8356   10576  90 3 0
+@@@O27   HG2 $OSR_SYMS 13922  7928   90 0 0
+@@@O28   LG2 $OSR_SYMS 13922  7158   90 0 0
+@@@O29   HG1 $OSR_SYMS 8492   7878   90 0 0
+@@@O30   LG1 $OSR_SYMS 8496   7120   90 0 0
+@@@O31   GND $GND_SYMS 5664   5806   0 0 0
+@@@O32   GND $GND_SYMS 15020  7796   0 0 0
+@@@O33   LX2 $OSR_SYMS 11856  7144   90 0 0
+@@@O34   LX1 $OSR_SYMS 10152  7136   90 0 0
+@@@O35   IIC_INT $OSR_SYMS 7896   14088  0 0 0
+@@@O36   IIC_SCL $OSR_SYMS 7896   13988  0 0 0
+@@@O37   IIC_SDA $OSR_SYMS 7896   13876  0 0 0
+@@@O38   GND $OSR_SYMS 7896   13764  0 0 0
+@@@O39   GND $GND_SYMS 6660   11216  0 1 0
+@@@O40   VBUS $OSR_SYMS 8480   11168  0 0 0
+@@@O41   VBUSG $OSR_SYMS 8476   10980  0 0 0
+@@@O42   VBUSI $OSR_SYMS 8480   10780  0 0 0
+@@@O43   GND $GND_SYMS 13472  13228  0 0 0
+@@@O44   GND $GND_SYMS 17332  7316   0 0 0
+@@@O45   CC1 $OSR_SYMS 11080  13736  90 3 0
+@@@O46   DMC $OSR_SYMS 11276  13732  90 2 0
+@@@O47   DPC $OSR_SYMS 11480  13732  90 2 0
+@@@O48   CC2 $OSR_SYMS 11680  13728  90 2 0
+@@@O49   LED1 $OSR_SYMS 6668   13020  90 2 0
+@@@O50   LED2 $OSR_SYMS 8372   13064  90 3 0
+@@@O51   LED2 $OSR_SYMS 10884  14024  90 2 0
+@@@O52   LED1 $OSR_SYMS 10628  14024  90 2 0
+@@@O53   IIC_SDA $OSR_SYMS 10760  14024  90 2 0
+@@@O54   IIC_SCL $OSR_SYMS 10488  14024  90 2 0
+@@@O55   IIC_INT $OSR_SYMS 8656   13060  90 2 0
+@@@O56   GND $GND_SYMS 3420   11096  0 0 0
+@@@O57   GND $GND_SYMS 3844   8960   0 0 0
+@@@O58   GND $GND_SYMS 16232  5552   0 0 0
+@@@O59   ISET_MODE $OSR_SYMS 15040  6468   0 0 0
+@@@O60   ISET_MODE $OSR_SYMS 9708   13516  90 2 0
+@@@O61   HLED $OSR_SYMS 7312   11220  0 0 0
+@@@O62   GND $GND_SYMS 7228   11016  0 0 0
+@@@O63   5V_LDO $OSR_SYMS 1566   15324  90 2 0
+@@@O64   CC1 $OSR_SYMS 3438   14816  0 3 0
+@@@O65   CC2 $OSR_SYMS 5686   15096  0 3 0
+@@@O66   BAT_MODE $OSR_SYMS 5962   13380  0 1 0
+@@@O67   GND $GND_SYMS 1242   14056  0 0 0
+@@@O68   BAT $OSR_SYMS 1010   14576  0 0 0
+@@@O69   GND $GND_SYMS 2112   13878  0 0 0
+@@@O70   GND $GND_SYMS 2936   12244  0 0 0
+@@@O71   HLED $OSR_SYMS 3752   13064  0 1 0
+@@@O72   GND $GND_SYMS 5028   12372  0 0 0
+@@@O73   GND $GND_SYMS 9848   8576   0 0 0
+@@@O74   GND $GND_SYMS 12112  8524   0 0 0
+@@@O75   GND $GND_SYMS 16388  11812  0 1 0
+@@@O76   KEY $OSR_SYMS 16392  13486  90 3 0
+@@@O77   KEY $OSR_SYMS 12772  11580  0 1 0
+@@@O78   GND $GND_SYMS 7436   9996   0 0 0
+@@@O79   GND $GND_SYMS 15624  10640  0 0 0
+@@@O80   VCC5V $OSR_SYMS 1888   6164   0 0 0
+@@@O81   BST1 $OSR_SYMS 3048   6164   0 1 0
+@@@O82   BST2 $OSR_SYMS 3056   5772   0 1 0
+
+*TIEDOTS*
+
+
+
+@@@D0    10660  8118  
+@@@D1    10660  7938  
+@@@D2    15020  8728  
+@@@D3    14622  8728  
+@@@D4    14622  8228  
+@@@D5    15020  8228  
+@@@D6    15352  8228  
+@@@D7    9542   8478  
+@@@D8    9542   8478  
+@@@D9    12722  8478  
+@@@D10   12722  7378  
+@@@D11   9542   7378  
+@@@D12   4116   9826  
+@@@D13   5452   9726  
+@@@D14   5452   9826  
+@@@D15   5452   9926  
+@@@D16   5452   10026 
+@@@D17   4116   9926  
+@@@D18   14332  8728  
+@@@D19   12722  8478  
+@@@D20   11248  7938  
+@@@D21   12722  7378  
+@@@D22   9542   7378  
+@@@D23   10422  7938  
+@@@D24   11422  7938  
+@@@D25   12722  8728  
+@@@D26   14322  8728  
+@@@D27   14412  11378 
+@@@D28   14412  11378 
+@@@D29   6602   8668  
+@@@D30   6602   8668  
+@@@D31   11248  8128  
+@@@D32   6842   8668  
+@@@D33   13302  8728  
+@@@D34   13302  9578  
+@@@D35   14322  9578  
+@@@D36   7504   8668  
+@@@D37   7672   9318  
+@@@D38   6842   9318  
+@@@D39   15020  8228  
+@@@D40   15352  8728  
+@@@D41   14622  8728  
+@@@D42   8122   8668  
+@@@D43   5672   9720  
+@@@D44   5664   6376  
+@@@D45   5664   6936  
+@@@D46   5664   7416  
+@@@D47   5664   7886  
+@@@D48   6194   7886  
+@@@D49   6194   7416  
+@@@D50   6194   6936  
+@@@D51   6194   8426  
+@@@D52   6194   8668  
+@@@D53   11856  7938  
+@@@D54   10152  7938  
+@@@D55   9464   14188 
+@@@D56   9860   14188 
+@@@D57   14412  11780 
+@@@D58   14412  12376 
+@@@D59   14412  12172 
+@@@D60   14412  11976 
+@@@D61   11880  13420 
+@@@D62   13472  13420 
+@@@D63   3696   9926  
+@@@D64   5672   9720  
+@@@D65   8372   11980 
+@@@D66   7892   11980 
+@@@D67   7256   11980 
+@@@D68   6668   12972 
+@@@D69   8372   12976 
+@@@D70   10862  13248 
+@@@D71   10658  13248 
+@@@D72   8656   11980 
+@@@D73   3276   9926  
+@@@D74   3468   9926  
+@@@D75   3844   9926  
+@@@D76   3844   9044  
+@@@D77   6668   11980 
+@@@D78   6660   11280 
+@@@D79   15712  8728  
+@@@D80   16436  7988  
+@@@D81   16536  7988  
+@@@D82   16976  7988  
+@@@D83   16236  7652  
+@@@D84   15636  6464  
+@@@D85   16232  5664  
+@@@D86   15636  5664  
+@@@D87   15268  6464  
+@@@D88   15712  8728  
+@@@D89   16436  9384  
+@@@D90   16336  9384  
+@@@D91   16236  9384  
+@@@D92   9858   13260 
+@@@D93   16536  9384  
+@@@D94   16976  7988  
+@@@D95   5030   14444 
+@@@D96   2502   14816 
+@@@D97   2938   14164 
+@@@D98   4702   15096 
+@@@D99   1566   15088 
+@@@D100  1566   14916 
+@@@D101  1242   14576 
+@@@D102  2502   15088 
+@@@D103  1838   14004 
+@@@D104  2934   12360 
+@@@D105  3528   13064 
+@@@D106  5640   13380 
+@@@D107  5030   12612 
+@@@D108  3300   13064 
+@@@D109  3292   12360 
+@@@D110  5404   13376 
+@@@D111  5400   12612 
+@@@D112  10462  8648  
+@@@D113  11452  8628  
+@@@D114  16392  11932 
+@@@D115  16392  13324 
+@@@D116  8124   10360 
+@@@D117  14622  10778 
+@@@D118  1996   6160  
+
+*CONNECTION*
+
+
+*SIGNAL* HLED 0 0
+U1.5         R11.1        3 0
+9052   11778 
+8760   11778 
+8760   11776 
+H3.1         @@@O61       3 0
+7334   11222 
+7334   11220 
+7312   11220 
+R42.1        @@@D105      2 0
+3528   12960 
+3528   13064 
+@@@D105      @@@D108      2 0
+3528   13064 
+3300   13064 
+@@@D105      @@@O71       2 0
+3528   13064 
+3752   13064 
+@@@D108      N3.2         2 0
+3300   13064 
+3284   13064 
+@@@D108      C10.1        3 0
+3300   13064 
+3300   12936 
+3292   12936 
+
+*SIGNAL* CSN2 0 0
+U1.25        @@@D34       3 0
+12490  10378 
+13302  10378 
+13302  9578  
+C21.1        @@@D34       2 0
+13542  9578  
+13302  9578  
+@@@D34       R9.2         2 0
+13302  9578  
+13302  9458  
+
+*SIGNAL* VBAT 0 0
+U5.3         @@@D80       3 0
+16336  8184  
+16336  7988  
+16436  7988  
+U5.2         @@@D80       2 0
+16436  8184  
+16436  7988  
+@@@D80       @@@D81       2 0
+16436  7988  
+16536  7988  
+U5.1         @@@D81       2 0
+16536  8184  
+16536  7988  
+@@@D82       @@@D81       2 0
+16976  7988  
+16536  7988  
+R16.2        @@@D82       3 0
+16976  7652  
+16976  7988  
+16976  7988  
+@@@D82       @@@D94       2 0
+16976  7988  
+16976  7988  
+R20.1        @@@D94       4 0
+16980  8448  
+16980  8296  
+16976  8296  
+16976  7988  
+@@@D94       BAT.1        2 0
+16976  7988  
+17324  7988  
+
+*SIGNAL* LED2 0 0
+D3.1         @@@D69       3 0
+7892   12588 
+7892   12976 
+8372   12976 
+D4.2         @@@D69       3 0
+8372   12580 
+8372   12976 
+8372   12976 
+@@@D69       @@@O50       2 0
+8372   12976 
+8372   13064 
+R13.1        @@@O51       3 0
+10860  13948 
+10860  14024 
+10884  14024 
+
+*SIGNAL* $$$12285 64 0
+HLED.1       R11.2        2 0
+8008   11776 
+8160   11776 
+
+*SIGNAL* ISET_MODE 0 0
+U1.47        @@@D92       2 0
+9858   13178 
+9858   13260 
+Q1.2         @@@D84       2 0
+15882  6464  
+15636  6464  
+C9.1         @@@D84       2 0
+15636  6360  
+15636  6464  
+@@@D84       @@@D87       2 0
+15636  6464  
+15268  6464  
+@@@D87       R18.2        2 0
+15268  6464  
+15268  6356  
+@@@D87       @@@O59       3 0
+15268  6464  
+15040  6464  
+15040  6468  
+@@@D92       RISET_MODE.2 3 0
+9858   13260 
+9858   13344 
+9860   13344 
+@@@D92       @@@O60       3 0
+9858   13260 
+9708   13260 
+9708   13516 
+
+*SIGNAL* GND 0 34
+"VALUE" GNDTFT
+"DGND" 
+"AGND" 
+"CD_CMD" 
+"UGND" 
+"GND" 
+"PART NUMBER" 
+"SLEEP_XTAL_IN" 
+"GND_a" 
+"V-CLK" 
+"GND_BT" 
+"System_Gnd" 
+"VBATR" 
+"dnd" 
+"Rules.Routing.RestrictedVias.00000" PTH18 STANDARDVIA
+"GND-FM" 
+"NET NAME" D
+"DESCRIPTION" 
+"DXLED#" DXLED#
+"GND_SIGNAL" 
+"VDD_ANA" 
+"VDD" 
+"vbat" 
+"Source Path" C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\CAPSYM.OLB
+"Name" PWRKEY
+"GND_B" 
+"VDD_BNA" 
+"GND_C" 
+"GND_CT" 
+"VDD_CNA" 
+"CD_DMD" 
+"GND_D" 
+"GND_DT" 
+"VDD_DNA" 
+CP1.2        @@@D6        3 0
+15712  8312  
+15712  8228  
+15352  8228  
+C2.2         @@@D6        2 0
+15352  8228  
+15352  8228  
+C6.2         @@@D4        2 0
+14332  8228  
+14622  8228  
+C3.2         @@@D5        2 0
+15020  8228  
+15020  8228  
+@@@D4        C5.2         2 0
+14622  8228  
+14622  8228  
+@@@D5        @@@D4        2 0
+15020  8228  
+14622  8228  
+@@@D6        @@@D39       2 0
+15352  8228  
+15020  8228  
+C7.2         @@@O0        2 0
+6602   7758  
+6602   7678  
+U3.7         @@@D10       2 0
+12822  7378  
+12722  7378  
+U3.5         @@@D10       2 0
+12622  7378  
+12722  7378  
+@@@D10       @@@D21       2 0
+12722  7378  
+12722  7378  
+U2.7         @@@D11       2 0
+9442   7378  
+9542   7378  
+U2.5         @@@D11       2 0
+9642   7378  
+9542   7378  
+@@@D11       @@@D22       2 0
+9542   7378  
+9542   7378  
+USB1.B12     @@@O14       3 0
+1512   10226 
+1360   10226 
+1360   10228 
+USB1.A1      @@@O15       3 0
+2712   10226 
+2842   10226 
+2842   10228 
+USB1.B1      @@@O16       2 0
+1512   9126  
+1340   9126  
+USB1.A12     @@@O17       2 0
+2712   9126  
+2838   9126  
+@@@D21       U3.6         2 0
+12722  7378  
+12722  7378  
+@@@D21       @@@O20       2 0
+12722  7378  
+12722  7158  
+@@@D22       U2.6         2 0
+9542   7378  
+9542   7378  
+@@@D22       @@@O21       2 0
+9542   7378  
+9542   7078  
+C13.2        @@@O22       2 0
+10422  6638  
+10422  6448  
+C14.2        @@@O23       2 0
+11422  6638  
+11422  6458  
+@@@D39       @@@O32       2 0
+15020  8228  
+15020  7796  
+C18.2        @@@D44       2 0
+5664   6376  
+5664   6376  
+C20.1        @@@D27       3 0
+14196  11180 
+14412  11180 
+14412  11378 
+U1.30        @@@D28       2 0
+12490  11378 
+14412  11378 
+@@@D27       @@@D57       2 0
+14412  11378 
+14412  11780 
+@@@D28       @@@D27       2 0
+14412  11378 
+14412  11378 
+@@@D28       @@@O24       3 0
+14412  11378 
+14804  11378 
+14804  11380 
+U1.49        @@@D55       4 0
+9462   13178 
+9462   13324 
+9464   13324 
+9464   14188 
+U1.11        @@@O26       3 0
+9052   10574 
+8356   10574 
+8356   10576 
+@@@D39       @@@D5        2 0
+15020  8228  
+15020  8228  
+@@@D44       @@@O31       2 0
+5664   6376  
+5664   5806  
+@@@D44       @@@D45       2 0
+5664   6376  
+5664   6936  
+@@@D45       C16.2        2 0
+5664   6936  
+5664   6936  
+@@@D45       @@@D46       2 0
+5664   6936  
+5664   7416  
+@@@D46       C17.2        2 0
+5664   7416  
+5664   7416  
+@@@D46       @@@D47       2 0
+5664   7416  
+5664   7886  
+@@@D47       C15.2        2 0
+5664   7886  
+5664   7886  
+CP2.2        @@@D47       4 0
+5734   8426  
+5734   8428  
+5664   8428  
+5664   7886  
+H1.4         @@@O38       3 0
+8370   13786 
+8370   13764 
+7896   13764 
+@@@O39       @@@D78       2 0
+6660   11216 
+6660   11280 
+RBAT_MODE.1  @@@D56       3 0
+10064  13952 
+10064  14188 
+9860   14188 
+@@@D55       @@@O25       2 0
+9464   14188 
+9464   14316 
+RISET_MODE.1 @@@D56       2 0
+9860   13944 
+9860   14188 
+@@@D56       @@@D55       2 0
+9860   14188 
+9464   14188 
+RISET.1      @@@D58       3 0
+13516  12572 
+14412  12572 
+14412  12376 
+@@@D57       C19.2        2 0
+14412  11780 
+14188  11780 
+RVSET.1      @@@D58       2 0
+13524  12376 
+14412  12376 
+@@@D58       @@@D59       2 0
+14412  12376 
+14412  12172 
+RCAP.1       @@@D59       2 0
+13528  12172 
+14412  12172 
+@@@D59       @@@D60       2 0
+14412  12172 
+14412  11976 
+RBATM.1      @@@D60       2 0
+13536  11976 
+14412  11976 
+@@@D60       @@@D57       2 0
+14412  11976 
+14412  11780 
+C23.2        @@@D62       3 0
+12820  13780 
+13472  13780 
+13472  13420 
+RNTC.2       @@@D62       2 0
+12952  13420 
+13472  13420 
+@@@D62       @@@O43       2 0
+13472  13420 
+13472  13228 
+GND.1        @@@O44       2 0
+17332  7512  
+17332  7316  
+GND1.1       @@@O56       3 0
+3168   11188 
+3420   11188 
+3420   11096 
+C11.2        @@@D76       2 0
+3844   9180  
+3844   9044  
+R14.1        @@@D76       3 0
+3468   9186  
+3468   9044  
+3844   9044  
+@@@D76       @@@O57       2 0
+3844   9044  
+3844   8960  
+R15.1        @@@D78       3 0
+6300   11330 
+6300   11280 
+6660   11280 
+@@@D78       HLED.2       3 0
+6660   11280 
+6660   11776 
+7508   11776 
+Q1.1         @@@D85       2 0
+16232  6264  
+16232  5664  
+R18.1        @@@D86       3 0
+15268  5756  
+15268  5664  
+15636  5664  
+@@@D85       @@@O58       2 0
+16232  5664  
+16232  5552  
+C9.2         @@@D86       2 0
+15636  5860  
+15636  5664  
+@@@D86       @@@D85       2 0
+15636  5664  
+16232  5664  
+H3.2         @@@O62       3 0
+7334   11122 
+7228   11122 
+7228   11016 
+U6.1         @@@D103      2 0
+1838   13944 
+1838   14004 
+C24.1        @@@O67       2 0
+1242   14076 
+1242   14056 
+@@@D103      C25.1        2 0
+1838   14004 
+1838   14076 
+@@@D103      @@@O69       3 0
+1838   14004 
+2112   14004 
+2112   13878 
+N3.1         @@@D104      2 0
+2934   12864 
+2934   12360 
+@@@D104      @@@D109      2 0
+2934   12360 
+3292   12360 
+@@@D104      @@@O70       3 0
+2934   12360 
+2934   12244 
+2936   12244 
+N4.1         @@@D107      2 0
+5030   13176 
+5030   12612 
+@@@D107      @@@O72       3 0
+5030   12612 
+5030   12372 
+5028   12372 
+@@@D107      @@@D111      2 0
+5030   12612 
+5400   12612 
+C10.2        @@@D109      3 0
+3292   12436 
+3292   12360 
+3292   12360 
+@@@D109      R42.2        2 0
+3292   12360 
+3528   12360 
+C12.2        @@@D111      2 0
+5400   12716 
+5400   12612 
+@@@D111      R41.2        3 0
+5400   12612 
+5638   12612 
+5638   12676 
+D7.A         @@@O73       3 0
+9840   8648  
+9848   8648  
+9848   8576  
+D6.A         @@@O74       3 0
+12116  8572  
+12116  8524  
+12112  8524  
+SW.2         @@@D114      2 0
+16392  12036 
+16392  11932 
+@@@D114      D10.K        3 0
+16392  11932 
+16392  11922 
+15948  11922 
+@@@D114      @@@O75       3 0
+16392  11932 
+16388  11932 
+16388  11812 
+C22.2        @@@O78       3 0
+7624   10092 
+7436   10092 
+7436   9996  
+C26.1        @@@O79       3 0
+15296  10784 
+15624  10784 
+15624  10640 
+
+*SIGNAL* BAT_MODE 0 0
+U1.46        RBAT_MODE.2  3 0
+10060  13180 
+10060  13352 
+10064  13352 
+@@@O66       @@@D106      2 0
+5962   13380 
+5640   13380 
+N4.2         @@@D110      2 0
+5380   13376 
+5404   13376 
+@@@D106      R41.1        3 0
+5640   13380 
+5638   13380 
+5638   13276 
+@@@D110      @@@D106      3 0
+5404   13376 
+5640   13376 
+5640   13380 
+@@@D110      C12.1        3 0
+5404   13376 
+5404   13216 
+5400   13216 
+
+*SIGNAL* VBUSI 0 0
+@@@D29       @@@D32       2 0
+6602   8668  
+6842   8668  
+C8.2         @@@D38       2 0
+7042   9318  
+6842   9318  
+U4.8         @@@D13       2 0
+5334   9726  
+5452   9726  
+U4.9         @@@D16       4 0
+4774   10326 
+4774   10426 
+5452   10426 
+5452   10026 
+@@@D13       @@@D43       4 0
+5452   9726  
+5520   9726  
+5520   9720  
+5672   9720  
+U4.7         @@@D14       2 0
+5334   9826  
+5452   9826  
+@@@D14       @@@D13       2 0
+5452   9826  
+5452   9726  
+U4.6         @@@D15       2 0
+5334   9926  
+5452   9926  
+@@@D15       @@@D14       2 0
+5452   9926  
+5452   9826  
+U4.5         @@@D16       2 0
+5334   10026 
+5452   10026 
+@@@D16       @@@D15       2 0
+5452   10026 
+5452   9926  
+@@@D29       @@@D30       2 0
+6602   8668  
+6602   8668  
+@@@D29       C7.1         2 0
+6602   8668  
+6602   8258  
+@@@D30       @@@D116      3 0
+6602   8668  
+6602   10360 
+8124   10360 
+@@@D32       @@@D38       2 0
+6842   8668  
+6842   9318  
+@@@D32       R1.2         2 0
+6842   8668  
+6842   8668  
+@@@D38       U1.13        4 0
+6842   9318  
+6842   9558  
+9660   9558  
+9660   9752  
+@@@D52       @@@D43       3 0
+6194   8668  
+5672   8668  
+5672   9720  
+@@@O18       @@@D64       2 0
+5820   9720  
+5672   9720  
+CP2.1        @@@D51       2 0
+6134   8426  
+6194   8426  
+@@@D48       C15.1        2 0
+6194   7886  
+6164   7886  
+@@@D48       @@@D49       2 0
+6194   7886  
+6194   7416  
+@@@D49       C17.1        2 0
+6194   7416  
+6164   7416  
+@@@D49       @@@D50       2 0
+6194   7416  
+6194   6936  
+@@@D50       C16.1        2 0
+6194   6936  
+6164   6936  
+@@@D50       C18.1        3 0
+6194   6936  
+6194   6376  
+6164   6376  
+@@@D51       @@@D48       2 0
+6194   8426  
+6194   7886  
+@@@D51       @@@D52       2 0
+6194   8426  
+6194   8668  
+@@@D52       @@@D30       2 0
+6194   8668  
+6602   8668  
+U1.10        @@@O42       3 0
+9052   10778 
+8480   10778 
+8480   10780 
+R12.1        @@@D64       3 0
+5048   10908 
+5672   10908 
+5672   9720  
+@@@D64       @@@D43       2 0
+5672   9720  
+5672   9720  
+C22.1        @@@D116      3 0
+8124   10092 
+8124   10360 
+8124   10360 
+@@@D116      U1.12        2 0
+8124   10360 
+9052   10360 
+
+*SIGNAL* LX2 0 0
+@@@D20       @@@D31       2 0
+11248  7938  
+11248  8128  
+C4.2         @@@D31       2 0
+11452  8128  
+11248  8128  
+U3.9         @@@D53       2 0
+12322  7938  
+11856  7938  
+@@@D20       L1.2         2 0
+11248  7938  
+11212  7938  
+R4.2         @@@D24       2 0
+11422  7848  
+11422  7938  
+@@@D24       @@@D20       2 0
+11422  7938  
+11248  7938  
+@@@D31       U1.21        2 0
+11248  8128  
+11248  9752  
+@@@D53       @@@D24       2 0
+11856  7938  
+11422  7938  
+@@@D53       @@@O33       2 0
+11856  7938  
+11856  7144  
+
+*SIGNAL* BST2 0 0
+C4.1         @@@D113      2 0
+11452  8628  
+11452  8628  
+D6.K         @@@D113      3 0
+11616  8572  
+11452  8572  
+11452  8628  
+@@@D113      U1.22        3 0
+11452  8628  
+11448  8628  
+11448  9752  
+D8.K         @@@O82       3 0
+2576   5768  
+3056   5768  
+3056   5772  
+
+*SIGNAL* LX1 0 0
+U1.18        @@@D0        2 0
+10660  9752  
+10660  8118  
+C1.2         @@@D0        2 0
+10462  8118  
+10660  8118  
+@@@D0        @@@D1        2 0
+10660  8118  
+10660  7938  
+@@@D1        L1.1         2 0
+10660  7938  
+10712  7938  
+U2.9         @@@D54       2 0
+9942   7938  
+10152  7938  
+R3.2         @@@D23       2 0
+10422  7848  
+10422  7938  
+@@@D23       @@@D1        2 0
+10422  7938  
+10660  7938  
+@@@D54       @@@D23       2 0
+10152  7938  
+10422  7938  
+@@@D54       @@@O34       2 0
+10152  7938  
+10152  7136  
+
+*SIGNAL* NTC 0 0
+U1.37        @@@D61       2 0
+11880  13178 
+11880  13420 
+RNTC.1       @@@D61       2 0
+12352  13420 
+11880  13420 
+@@@D61       C23.1        3 0
+11880  13420 
+11880  13780 
+12320  13780 
+
+*SIGNAL* BST1 0 0
+U1.17        @@@D112      3 0
+10460  9752  
+10462  9752  
+10462  8648  
+D7.K         @@@D112      3 0
+10340  8648  
+10462  8648  
+10462  8648  
+@@@D112      C1.1         2 0
+10462  8648  
+10462  8618  
+D9.K         @@@O81       3 0
+2576   6160  
+3048   6160  
+3048   6164  
+
+*SIGNAL* BAT 0 0
+@@@D2        @@@D40       2 0
+15020  8728  
+15352  8728  
+C3.1         @@@D2        2 0
+15020  8728  
+15020  8728  
+@@@D2        @@@D3        2 0
+15020  8728  
+14622  8728  
+@@@D3        C5.1         2 0
+14622  8728  
+14622  8728  
+@@@D18       @@@D41       2 0
+14332  8728  
+14622  8728  
+@@@D18       C6.1         2 0
+14332  8728  
+14332  8728  
+@@@D18       @@@D26       2 0
+14332  8728  
+14322  8728  
+U1.26        @@@D35       3 0
+12490  10578 
+14322  10578 
+14322  9578  
+@@@D26       R2.2         2 0
+14322  8728  
+14092  8728  
+C21.2        @@@D35       2 0
+14042  9578  
+14322  9578  
+@@@D35       @@@D26       2 0
+14322  9578  
+14322  8728  
+@@@D40       @@@D79       2 0
+15352  8728  
+15712  8728  
+@@@D40       C2.1         2 0
+15352  8728  
+15352  8728  
+U1.27        @@@D117      2 0
+12490  10778 
+14622  10778 
+@@@D41       @@@D3        2 0
+14622  8728  
+14622  8728  
+@@@D79       CP1.1        2 0
+15712  8728  
+15712  8712  
+@@@D79       @@@D88       2 0
+15712  8728  
+15712  8728  
+@@@D88       U5.9         3 0
+15712  8728  
+15936  8728  
+15936  8724  
+@@@D88       @@@D91       3 0
+15712  8728  
+15712  9384  
+16236  9384  
+U5.7         @@@D89       2 0
+16436  9284  
+16436  9384  
+@@@D89       @@@D93       2 0
+16436  9384  
+16536  9384  
+U5.6         @@@D90       3 0
+16336  9284  
+16336  9384  
+16336  9384  
+@@@D90       @@@D89       2 0
+16336  9384  
+16436  9384  
+U5.5         @@@D91       3 0
+16236  9284  
+16236  9384  
+16236  9384  
+@@@D91       @@@D90       2 0
+16236  9384  
+16336  9384  
+@@@D93       U5.8         2 0
+16536  9384  
+16536  9284  
+@@@D93       R20.2        3 0
+16536  9384  
+16980  9384  
+16980  9048  
+C24.2        @@@D101      2 0
+1242   14576 
+1242   14576 
+@@@D101      U6.2         3 0
+1242   14576 
+1698   14576 
+1698   13944 
+@@@D101      @@@O68       2 0
+1242   14576 
+1010   14576 
+@@@D117      @@@D41       2 0
+14622  10778 
+14622  8728  
+@@@D117      C26.2        3 0
+14622  10778 
+14796  10778 
+14796  10784 
+
+*SIGNAL* ISET 0 0
+U1.36        RISET.2      3 0
+12492  12578 
+12916  12578 
+12916  12572 
+
+*SIGNAL* VSET 0 0
+U1.35        RVSET.2      3 0
+12492  12378 
+12924  12378 
+12924  12376 
+
+*SIGNAL* $$$1417 64 0
+U2.1         R5.2         2 0
+9342   8478  
+9092   8478  
+
+*SIGNAL* CC1 0 0
+USB1.A5      @@@O5        2 0
+2712   9826  
+2844   9826  
+U1.41        @@@O45       2 0
+11080  13178 
+11080  13736 
+@@@O64       Q2.D         2 0
+3438   14816 
+3338   14816 
+
+*SIGNAL* HG1 0 0
+U1.16        @@@O1        2 0
+10260  9752  
+10260  9316  
+R5.1         @@@O29       2 0
+8492   8478  
+8492   7878  
+
+*SIGNAL* LG1 0 0
+U1.19        @@@O2        2 0
+10860  9752  
+10860  9312  
+@@@O30       R6.1         3 0
+8496   7120  
+8496   7378  
+8572   7378  
+
+*SIGNAL* LG2 0 0
+U1.20        @@@O3        2 0
+11060  9752  
+11060  9316  
+R8.2         @@@O28       3 0
+13722  7378  
+13922  7378  
+13922  7158  
+
+*SIGNAL* HG2 0 0
+U1.23        @@@O4        2 0
+11648  9752  
+11648  9328  
+@@@O27       R7.2         3 0
+13922  7928  
+13922  8478  
+13672  8478  
+
+*SIGNAL* DPC 0 0
+USB1.A6      @@@O6        2 0
+2712   9726  
+2844   9726  
+USB1.B6      @@@O11       2 0
+1512   9626  
+1338   9626  
+U1.39        @@@O47       2 0
+11480  13178 
+11480  13732 
+
+*SIGNAL* PCON 0 0
+U3.2         @@@D9        2 0
+12822  8478  
+12722  8478  
+U3.4         @@@D9        2 0
+12622  8478  
+12722  8478  
+@@@D9        @@@D19       2 0
+12722  8478  
+12722  8478  
+@@@D25       @@@D33       2 0
+12722  8728  
+13302  8728  
+@@@D19       U3.3         2 0
+12722  8478  
+12722  8478  
+U1.24        @@@D25       3 0
+11848  9752  
+11848  8728  
+12722  8728  
+@@@D25       @@@D19       2 0
+12722  8728  
+12722  8478  
+R9.1         @@@D33       2 0
+13302  8858  
+13302  8728  
+@@@D33       R2.1         2 0
+13302  8728  
+13492  8728  
+
+*SIGNAL* DMC 0 0
+USB1.A7      @@@O7        3 0
+2712   9626  
+2844   9626  
+2844   9624  
+USB1.B7      @@@O12       2 0
+1512   9726  
+1336   9726  
+U1.40        @@@O46       3 0
+11280  13178 
+11280  13732 
+11276  13732 
+
+*SIGNAL* VBUS 0 0
+USB1.A9      @@@O8        3 0
+2712   9426  
+2838   9426  
+2838   9428  
+USB1.B4      @@@O9        3 0
+1512   9426  
+1342   9426  
+1342   9428  
+USB1.B9      @@@O13       2 0
+1512   9926  
+1350   9926  
+USB1.A4      @@@D73       2 0
+2712   9926  
+3276   9926  
+@@@D12       U4.1         4 0
+4116   9826  
+4116   9716  
+4234   9716  
+4234   9726  
+U4.2         @@@D12       2 0
+4234   9826  
+4116   9826  
+U4.3         @@@D17       2 0
+4234   9926  
+4116   9926  
+@@@D74       @@@D63       2 0
+3468   9926  
+3696   9926  
+@@@D17       @@@D12       2 0
+4116   9926  
+4116   9826  
+U1.8         @@@O40       3 0
+9052   11178 
+8480   11178 
+8480   11168 
+@@@D63       @@@D75       2 0
+3696   9926  
+3844   9926  
+@@@D63       R12.2        3 0
+3696   9926  
+3696   10908 
+4448   10908 
+@@@D73       @@@D74       2 0
+3276   9926  
+3468   9926  
+@@@D73       VBUS.1       3 0
+3276   9926  
+3276   10852 
+3176   10852 
+R14.2        @@@D74       2 0
+3468   9786  
+3468   9926  
+C11.1        @@@D75       3 0
+3844   9680  
+3844   9926  
+3844   9926  
+@@@D75       @@@D17       2 0
+3844   9926  
+4116   9926  
+
+*SIGNAL* CC2 0 0
+USB1.B5      @@@O10       2 0
+1512   9526  
+1342   9526  
+U1.38        @@@O48       2 0
+11680  13178 
+11680  13728 
+@@@O65       Q3.D         2 0
+5686   15096 
+5430   15096 
+
+*SIGNAL* FACP 0 0
+U1.34        RCAP.2       3 0
+12492  12178 
+12492  12172 
+12928  12172 
+
+*SIGNAL* BAT_NUM 0 0
+U1.33        RBATM.2      3 0
+12492  11978 
+12936  11978 
+12936  11976 
+
+*SIGNAL* $$$1433 64 0
+U3.1         R7.1         2 0
+12922  8478  
+13072  8478  
+
+*SIGNAL* LED1 0 0
+D2.2         @@@D68       3 0
+7256   12588 
+7256   12972 
+6668   12972 
+@@@D68       D1.1         2 0
+6668   12972 
+6668   12592 
+@@@D68       @@@O49       2 0
+6668   12972 
+6668   13020 
+R10.2        @@@O52       4 0
+10656  13940 
+10656  13984 
+10628  13984 
+10628  14024 
+
+*SIGNAL* LT 0 0
+U1.2         LT.1         3 0
+9052   12378 
+9004   12378 
+9004   12376 
+
+*SIGNAL* VBUSG 0 0
+U4.4         @@@O19       2 0
+4234   10026 
+4046   10026 
+U1.9         @@@O41       3 0
+9052   10978 
+8476   10978 
+8476   10980 
+
+*SIGNAL* IIC_SCL 0 0
+H1.2         @@@O36       3 0
+8370   13986 
+7896   13986 
+7896   13988 
+U1.43        @@@D71       2 0
+10658  13180 
+10658  13248 
+@@@D71       R10.1        3 0
+10658  13248 
+10658  13340 
+10656  13340 
+@@@D71       @@@O54       4 0
+10658  13248 
+10484  13248 
+10484  14024 
+10488  14024 
+
+*SIGNAL* IIC_SDA 0 0
+H1.3         @@@O37       3 0
+8370   13886 
+7896   13886 
+7896   13876 
+U1.42        @@@D70       2 0
+10862  13174 
+10862  13248 
+@@@D70       R13.2        3 0
+10862  13248 
+10862  13348 
+10860  13348 
+@@@D70       @@@O53       3 0
+10862  13248 
+10760  13248 
+10760  14024 
+
+*SIGNAL* $$$1438 64 0
+U3.8         R8.1         2 0
+12922  7378  
+13122  7378  
+
+*SIGNAL* KEY 0 0
+R21.2        @@@D115      4 0
+15944  13178 
+15946  13178 
+15946  13324 
+16392  13324 
+@@@D115      R22.2        2 0
+16392  13324 
+16392  13276 
+@@@D115      @@@O76       2 0
+16392  13324 
+16392  13486 
+U1.31        @@@O77       3 0
+12492  11578 
+12772  11578 
+12772  11580 
+
+*SIGNAL* $$$1075 64 0
+@@@D96       @@@D102      2 0
+2502   14816 
+2502   15088 
+R44.2        @@@D98       2 0
+4702   15060 
+4702   15096 
+R43.1        @@@D96       2 0
+2502   14764 
+2502   14816 
+@@@D96       Q2.S         2 0
+2502   14816 
+2738   14816 
+@@@D98       Q3.S         2 0
+4702   15096 
+4830   15096 
+D5.K         @@@D102      2 0
+2212   15088 
+2502   15088 
+@@@D102      @@@D98       3 0
+2502   15088 
+2502   15096 
+4702   15096 
+
+*SIGNAL* $$$13827 64 0
+U5.4         @@@D83       2 0
+16236  8184  
+16236  7652  
+R16.1        @@@D83       2 0
+16376  7652  
+16236  7652  
+@@@D83       R17.2        2 0
+16236  7652  
+16236  7540  
+
+*SIGNAL* VCC5V 0 0
+C20.2        U1.29        4 0
+13696  11180 
+13772  11180 
+13772  11178 
+12490  11178 
+D9.A         @@@D118      2 0
+2276   6160  
+1996   6160  
+@@@D118      @@@O80       3 0
+1996   6160  
+1888   6160  
+1888   6164  
+@@@D118      D8.A         3 0
+1996   6160  
+1996   5768  
+2276   5768  
+
+*SIGNAL* $$$27875 64 0
+R3.1         C13.1        2 0
+10422  7248  
+10422  7138  
+
+*SIGNAL* $$$27877 64 0
+C14.1        R4.1         2 0
+11422  7138  
+11422  7248  
+
+*SIGNAL* PCIN 0 0
+U2.4         @@@D7        2 0
+9642   8478  
+9542   8478  
+@@@D7        U2.3         2 0
+9542   8478  
+9542   8478  
+@@@D7        @@@D8        2 0
+9542   8478  
+9542   8478  
+@@@D8        U2.2         2 0
+9542   8478  
+9442   8478  
+@@@D36       R1.1         2 0
+7504   8668  
+7442   8668  
+@@@D8        @@@D42       3 0
+9542   8478  
+9542   8668  
+8122   8668  
+U1.15        @@@D42       4 0
+10060  9752  
+10060  8952  
+8122   8952  
+8122   8668  
+R19.1        @@@D36       2 0
+7504   8718  
+7504   8668  
+@@@D36       @@@D42       2 0
+7504   8668  
+8122   8668  
+
+*SIGNAL* $$$10734 64 0
+R21.1        D10.A        3 0
+15944  12578 
+15944  12422 
+15948  12422 
+
+*SIGNAL* $$$3154 64 0
+@@@D95       Q3.G         2 0
+5030   14444 
+5030   14746 
+@@@D95       N4.3         2 0
+5030   14444 
+5030   13776 
+R44.1        @@@D95       3 0
+4702   14460 
+4702   14444 
+5030   14444 
+
+*SIGNAL* VCCIO 0 0
+C19.1        U1.32        4 0
+13688  11780 
+13204  11780 
+13204  11778 
+12492  11778 
+
+*SIGNAL* $$$1529 64 0
+R6.2         U2.8         2 0
+9172   7378  
+9342   7378  
+
+*SIGNAL* $$$13841 64 0
+R17.1        Q1.3         4 0
+16236  6940  
+16236  6798  
+16232  6798  
+16232  6864  
+
+*SIGNAL* $$$17666 64 0
+N3.3         @@@D97       3 0
+2934   13464 
+2934   14164 
+2938   14164 
+@@@D97       R43.2        2 0
+2938   14164 
+2502   14164 
+Q2.G         @@@D97       2 0
+2938   14466 
+2938   14164 
+
+*SIGNAL* CSN1 0 0
+U1.14        @@@D37       3 0
+9860   9752  
+9860   9318  
+7672   9318  
+C8.1         @@@D37       2 0
+7542   9318  
+7672   9318  
+@@@D37       R19.2        2 0
+7672   9318  
+7504   9318  
+
+*SIGNAL* $$$20014 64 0
+R22.1        SW.1         2 0
+16392  12676 
+16392  12636 
+
+*SIGNAL* 5V_LDO 0 0
+@@@D99       D5.A         2 0
+1566   15088 
+1912   15088 
+@@@D99       @@@O63       2 0
+1566   15088 
+1566   15324 
+C25.2        @@@D100      3 0
+1838   14576 
+1838   14916 
+1566   14916 
+U6.3         @@@D100      3 0
+1562   13944 
+1562   14916 
+1566   14916 
+@@@D100      @@@D99       2 0
+1566   14916 
+1566   15088 
+
+*SIGNAL* IIC_INT 0 0
+H1.1         @@@O35       3 0
+8370   14086 
+7896   14086 
+7896   14088 
+U1.4         @@@D72       3 0
+9052   11978 
+9052   11980 
+8656   11980 
+D4.1         @@@D65       2 0
+8372   12080 
+8372   11980 
+@@@D65       @@@D66       2 0
+8372   11980 
+7892   11980 
+D3.2         @@@D66       2 0
+7892   12088 
+7892   11980 
+@@@D66       @@@D67       2 0
+7892   11980 
+7256   11980 
+D2.1         @@@D67       3 0
+7256   12088 
+7256   11980 
+7256   11980 
+@@@D67       @@@D77       2 0
+7256   11980 
+6668   11980 
+@@@D72       @@@D65       2 0
+8656   11980 
+8372   11980 
+@@@D72       @@@O55       2 0
+8656   11980 
+8656   13060 
+@@@D77       D1.2         3 0
+6668   11980 
+6668   11980 
+6668   12092 
+@@@D77       R15.2        3 0
+6668   11980 
+6300   11980 
+6300   11930 
+
+*NETNAMES*
+
+
+
+HG1          @@@O1        80     -400   0 1 0      0      0 3 -1 10 97 "Default Font"
+LG1          @@@O2        70     -400   0 1 0      0      0 3 -1 10 97 "Default Font"
+LG2          @@@O3        70     -410   0 1 0      0      0 3 -1 10 97 "Default Font"
+HG2          @@@O4        80     -340   0 3 0      0      90 3 -1 10 97 "Default Font"
+CC1          @@@O5        360    0      0 0 0      0      0 3 -1 10 97 "Default Font"
+DPC          @@@O6        360    0      0 0 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+DMC          @@@O7        360    0      0 0 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+VBUS         @@@O8        360    0      0 0 0      0      0 3 -1 10 97 "Default Font"
+VBUS         @@@O9        -360   0      0 1 0      0      0 3 -1 10 97 "Default Font"
+CC2          @@@O10       -360   0      0 1 0      0      0 3 -1 10 97 "Default Font"
+DPC          @@@O11       -360   0      0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+DMC          @@@O12       -360   0      0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+VBUS         @@@O13       -360   0      0 1 0      0      0 3 -1 10 97 "Default Font"
+VBUS         USB1.A4      226    16     0 0 0      0      0 0 -1 10 97 "Default Font"
+VBUSI        @@@O18       360    0      0 0 0      0      0 3 -1 10 97 "Default Font"
+VBUSG        @@@O19       -360   0      0 1 0      0      0 3 -1 10 97 "Default Font"
+HG2          @@@O27       80     -400   0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+LG2          @@@O28       60     -400   0 1 0      0      0 3 -1 10 97 "Default Font"
+HG1          @@@O29       70     -400   0 1 0      0      0 3 -1 10 97 "Default Font"
+LG1          @@@O30       60     -420   0 1 0      0      0 3 -1 10 97 "Default Font"
+VCC5V        U1.29        80     0      0 0 0      0      0 0 -1 10 97 "Default Font"
+VCCIO        U1.32        80     94     0 2 0      0      0 0 -1 10 97 "Default Font"
+LX2          @@@O33       66     -446   0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+LX1          @@@O34       50     -438   0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+CSN1         U1.14        0      -80    90 2 0      0      0 0 -1 10 100 "Default Font"
+PCIN         U1.15        0      -80    90 2 0      0      0 0 -1 10 100 "Default Font"
+BST1         C1.1         -20    1060   90 2 0      0      0 0 -1 10 100 "Default Font"
+BST2         U1.22        0      -80    90 2 0      0      0 0 -1 10 97 "Regular Microsoft Sans Serif"
+PCON         U1.24        0      -80    90 2 0      0      0 0 -1 10 100 "Default Font"
+CSN2         U1.25        80     0      0 0 0      0      0 0 -1 10 100 "Default Font"
+IIC_INT      @@@O35       -384   -36    0 1 0      0      0 3 -1 10 100 "Default Font"
+IIC_SCL      @@@O36       -384   -36    0 1 0      0      0 3 -1 10 100 "Default Font"
+IIC_SDA      @@@O37       -384   -34    0 1 0      0      0 3 -1 10 100 "Default Font"
+GND          @@@O38       -384   -42    0 1 0      0      0 3 -1 10 100 "Default Font"
+VBUS         @@@O40       -338   -40    0 1 0      0      0 3 -1 10 100 "Default Font"
+VBUSG        @@@O41       -360   0      0 1 0      0      0 3 -1 10 100 "Default Font"
+VBUSI        @@@O42       -360   0      0 1 0      0      0 3 -1 10 100 "Default Font"
+CC1          @@@O45       44     356    90 0 0      0      90 3 -1 10 100 "Default Font"
+DMC          @@@O46       0      360    90 0 0      0      90 3 -1 10 100 "Default Font"
+DPC          @@@O47       0      360    90 0 0      0      90 3 -1 10 100 "Default Font"
+CC2          @@@O48       0      360    90 0 0      0      90 3 -1 10 100 "Default Font"
+LED1         @@@O49       72     312    90 3 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+LED2         @@@O50       76     96     90 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+LED2         @@@O51       -36    516    90 3 0      0      90 3 -1 10 97 "Regular Microsoft Sans Serif"
+LED1         @@@O52       -36    516    90 3 0      0      90 3 -1 10 97 "Regular Microsoft Sans Serif"
+IIC_SDA      @@@O53       -44    660    90 3 0      0      90 3 -1 10 100 "Default Font"
+IIC_SCL      @@@O54       36     316    90 0 0      0      90 3 -1 10 100 "Default Font"
+IIC_INT      @@@O55       156    -68    90 0 0      0      90 3 -1 10 100 "Default Font"
+ISET_MODE    @@@O59       152    72     0 1 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+ISET_MODE    @@@O60       -148   288    90 3 0      0      90 3 -1 10 100 "Default Font"
+HLED         @@@O61       -92    104    0 1 0      0      0 3 -1 10 100 "Default Font"
+5V_LDO       @@@O63       -490   46     0 0 0      0      0 3 -1 10 100 "Default Font"
+CC1          @@@O64       360    0      0 0 0      0      90 3 -1 10 100 "Default Font"
+CC2          @@@O65       330    32     0 2 0      0      0 3 -1 10 100 "Default Font"
+BAT_MODE     @@@O66       354    174    0 3 0      0      0 3 -1 10 97 "Regular Microsoft Sans Serif"
+BAT          @@@O68       -328   -32    0 1 0      0      0 3 -1 10 100 "Default Font"
+HLED         @@@O71       360    0      0 0 0      0      0 3 -1 10 100 "Default Font"
+KEY          @@@O76       -144   122    90 0 0      0      90 3 -1 10 97 "Default Font"
+KEY          @@@O77       360    0      0 0 0      0      0 3 -1 10 100 "Default Font"
+VCC5V        @@@O80       -360   0      0 1 0      0      0 3 -1 10 100 "Default Font"
+BST1         @@@O81       360    0      0 0 0      0      0 3 -1 10 100 "Default Font"
+BST2         @@@O82       360    0      0 0 0      0      0 3 -1 10 100 "Default Font"
+
+*END*     OF ASCII OUTPUT FILE
